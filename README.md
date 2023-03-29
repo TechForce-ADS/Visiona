@@ -222,10 +222,10 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 - >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Prototipo"> Protótipo
 
 
-- >  <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Sprint ">1º Sprint
-- > <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Sprint "> 2º Sprint
-- >  <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Sprint ">3º Sprint
-- > <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Sprint "> 4º Sprint
+- >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Sprints/1_Sprint">1º Sprint
+- > <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Sprints/2_Sprint"> 2º Sprint
+- >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Sprints/3_Sprint">3º Sprint
+- > <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Sprints/4_Sprint"> 4º Sprint
   
 # Burndown do Projeto
 
