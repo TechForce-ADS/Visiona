@@ -71,14 +71,6 @@ Projeto de API - 3° Semestre de 2022 da Fatec São José dos Campos - VISIONA
   </tr>
   
   <tr>
-    <td>Ali Mohamed</td>
-    <td>ST</td>
-    <td><a href="https://www.linkedin.com/in/alimohamedkhodr"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30px"></a></td>
-    <td><a href="https://github.com/alimoahmed"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30px"></a></td>
-    <td>Estável</td>
-  </tr>
-  
-  <tr>
     <td> Ítalo Bonilha</td>
     <td>ST</td>
     <td><a href=""><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30px"></a></td>
