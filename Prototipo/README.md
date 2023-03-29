@@ -11,7 +11,7 @@ Abaixo estão presentes as telas de cadastro e login, criados para a empresa Vis
  # Páginas do funcionário
 
 > Página Inicial
- <img src = "https://github.com/TechForce-ADS/imagens/blob/main/FUNCION%C3%81RIO.png.png" > 
+ <img src = "https://github.com/TechForce-ADS/imagens/blob/main/FUNCION%C3%81RIO.png" > 
  
  > Dashboard
  <img src = "https://github.com/TechForce-ADS/imagens/blob/main/FUNCION%C3%81RIO%20(2).png" > 
