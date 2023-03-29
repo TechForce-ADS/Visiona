@@ -219,7 +219,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 # Sprint
 
-- >  <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Prototipo.md"> Protótipo
+- >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Prototipo"> Protótipo
 
 
 - >  <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Sprint ">1º Sprint
