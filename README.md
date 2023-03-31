@@ -71,14 +71,6 @@ Projeto de API - 3° Semestre de 2022 da Fatec São José dos Campos - VISIONA
   </tr>
   
   <tr>
-    <td>Ali Mohamed</td>
-    <td>ST</td>
-    <td><a href="https://www.linkedin.com/in/alimohamedkhodr"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30px"></a></td>
-    <td><a href="https://github.com/alimoahmed"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30px"></a></td>
-    <td>Estável</td>
-  </tr>
-  
-  <tr>
     <td> Ítalo Bonilha</td>
     <td>ST</td>
     <td><a href=""><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30px"></a></td>
@@ -227,13 +219,13 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 # Sprint
 
-- >  <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Prototipo.md"> Protótipo
+- >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Prototipo"> Protótipo
 
 
-- >  <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Sprint ">1º Sprint
-- > <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Sprint "> 2º Sprint
-- >  <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Sprint ">3º Sprint
-- > <a href="https://github.com/TechForce-ADS/Projeto_API_Visiona/blob/main/Sprint "> 4º Sprint
+- >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Sprints/1_Sprint">1º Sprint
+- > <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Sprints/2_Sprint"> 2º Sprint
+- >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Sprints/3_Sprint">3º Sprint
+- > <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Sprints/4_Sprint"> 4º Sprint
   
 # Burndown do Projeto
 
