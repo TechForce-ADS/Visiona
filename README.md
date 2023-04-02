@@ -1,5 +1,5 @@
 # Projeto API - Visiona
-Projeto de API - 3° Semestre de 2022 da Fatec São José dos Campos - VISIONA
+Projeto de API - 3° Semestre de 2023 da Fatec São José dos Campos - VISIONA
 
 
 <br>
@@ -114,8 +114,8 @@ ST - Scrum Team
 ```
 
 # Projeto
-Um sistema de gerenciamente de usuários de autenticação e autorização para acesso de serviços oferecidos pela empresa. A dashboard deve ser implementada utilizando GCP (Google Cloud Platform), containers devem ser utilizados e implementado em esteira CI/CD. O sistema deve seguir boas práticas de desenvolvimento orientado a objetos, testes unitários e de integração para garantir uma entrega de qualidade, onde 80% do código deve estar validado por uma ferramenta de análise. 
-Deve possuir uma interface para gerenciar os usuários, permitindo que sejma criados, editados, excluidos e visualizados, havendo necessidade de atribuir permissões para cada usuário. 
+Um sistema de gerenciamento de usuários de autenticação e autorização para acesso de serviços oferecidos pela empresa. A dashboard deve ser implementada utilizando GCP (Google Cloud Platform), containers devem ser utilizados e implementado em esteira CI/CD. O sistema deve seguir boas práticas de desenvolvimento orientado a objetos, testes unitários e de integração para garantir uma entrega de qualidade, onde 80% do código deve estar validado por uma ferramenta de análise. 
+Deve possuir uma interface para gerenciar os usuários, permitindo que sejam criados, editados, excluidos e visualizados, havendo necessidade de atribuir permissões para cada usuário. 
 
  
 
@@ -140,7 +140,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 
 > Requisitos não Funcionais:
-- Documentação do Sistema (modelagem de daods e código de fonte)
+- Documentação do Sistema (modelagem de dados e código de fonte)
 - Manual do usuário
 - Utilização do GCP
 - Utilização de ferramentas para CI/CD (Git, GihubAction, Jenkins, Sonar)
@@ -179,8 +179,8 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
  ### Sprint 3</a> - 24/04 - 14/05</p>
  > <p>:x: Dashboard</p>
- > <p>:x:Listagem completa dos usuários </p>
- > <p>:x:Sistema de exclusão lógicar</p>
+ > <p>:x:Listagem completa dos usuários</p>
+ > <p>:x:Sistema de exclusão lógica</p>
  > <p>:x:Filtro de ordenaçãor</p>
  
 
