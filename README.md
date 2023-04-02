@@ -229,6 +229,8 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
   
 # Burndown do Projeto
 
-<img src = "https://github.com/TechForce-ADS/imagens/blob/main/Imagem1.png"/>
+> 1° Sprint
+
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/Burndown-visiona1.png"/>
  
 
