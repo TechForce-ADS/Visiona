@@ -171,7 +171,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
  
  
  ### Sprint 2</a> - 03/04 - 23/04</p>
- > <p>:x: Sistema de autenticação</p>
+ > <p>:x: Sistema de Autenticação</p>
  > <p>:x: Listagem Completa dos usuários</p>
  > <p>:x: Tela de Visualizar</p>
  
