@@ -158,30 +158,30 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 > Sprint:
 
- <img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronograma-visiona.png" alt="sprint" >
+ <img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronograma-sprint.png" alt="sprint" >
  
  ### Sprint 1</a> - 13/03 - 02/04</p>
  > <p>:heavy_check_mark: Design e identidade visual </p>
  > <p>:heavy_check_mark: Criação do protótipo </p>
  > <p>:heavy_check_mark: Criar tela de Login</p>
  > <p>:heavy_check_mark: Criar tela de cadastro</p>
- > <p>:heavy_check_mark: Criação de banco de dados/p>
+ > <p>:heavy_check_mark: Criação de banco de dados</p>
  > <p>:heavy_check_mark: Aviso de erro na tela de login</p>
  > <p>:heavy_check_mark: Listagem Básica dos usuários</p>
  
  
  ### Sprint 2</a> - 03/04 - 23/04</p>
  > <p>:x: Sistema de autenticação</p>
- > <p>:x: Sistema de edição</p>
+ > <p>:x: Listagem Completa dos usuários</p>
  > <p>:x: Tela de Visualizar</p>
  
  
 
  ### Sprint 3</a> - 24/04 - 14/05</p>
  > <p>:x: Dashboard</p>
- > <p>:x:Listagem completa dos usuários</p>
+ > <p>:x:Sistema de edição</p>
  > <p>:x:Sistema de exclusão lógica</p>
- > <p>:x:Filtro de ordenaçãor</p>
+ > <p>:x:Filtro de ordenação</p>
  
 
   ### Sprint 4</a> - 15/05 - 04/06</p>
