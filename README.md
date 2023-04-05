@@ -142,8 +142,6 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 > Requisitos não Funcionais:
 - Documentação do Sistema (modelagem de dados e código de fonte)
 - Manual do usuário
-- Utilização do GCP
-- Utilização de ferramentas para CI/CD (Git, GihubAction, Jenkins, Sonar)
 - Criação de componentes para reaproveitamento de código.
 
 
@@ -195,7 +193,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 # Tecnologia Utilizadas
 
 
-<img src ="https://github.com/TechForce-ADS/imagens/blob/main/tecnologias-visiona.jpg"/>
+<img src ="https://github.com/TechForce-ADS/imagens/blob/main/tu.jpg"/>
  
 
 ## 
@@ -206,8 +204,6 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 > - Postgres (Banco de Dados)
 > - Canva (Protótipo)
 > - Pacote Office (Documentação)
-> - GCP (Google Cloud Platform)
-> - Docker
 > - GitHub (Repositório)
 > - Slack (Comunicação do Po com a empresa)
 
