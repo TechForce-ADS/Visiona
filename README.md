@@ -169,16 +169,17 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
  
  
  ### Sprint 2</a> - 03/04 - 23/04</p>
- > <p>:x: Sistema de Autenticação</p>
- > <p>:x: Listagem Completa dos usuários</p>
- > <p>:x: Tela de Visualizar</p>
- 
+ > <p>:x: Sistema de autenticação dos usuários</p>
+ > <p>:x: Listagem dos usuários </p>
+ > <p>:x: Sistema de exclusão	</p>
+ > <p>:x:Adicionar botão de "tem certeza que deseja deletar esse usuário?"</p>
+ > <p>:x: Criar entrada de separação Adm/usuário  </p>
+ > <p>:x: Adicionar barra de pesquisa	</p>
  
 
  ### Sprint 3</a> - 24/04 - 14/05</p>
  > <p>:x: Dashboard</p>
  > <p>:x:Sistema de edição</p>
- > <p>:x:Sistema de exclusão lógica</p>
  > <p>:x:Filtro de ordenação</p>
  
 
@@ -218,7 +219,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 - >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Prototipo"> Protótipo
  
 - >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Prototipo#1-sprint"> 1° Sprint
-- >  <a href="https://github.com/TechForce-ADS/Visiona/blob/main/Prototipo#2-sprint"> 2° Sprint
+- >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Prototipo#2-sprint"> 2° Sprint
 - >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Prototipo#3-sprint"> 3° Sprint
 - >  <a href="https://github.com/TechForce-ADS/Visiona/tree/main/Prototipo#4-sprint"> 4° Sprint
   
