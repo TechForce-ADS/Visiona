@@ -201,13 +201,13 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 
 > - NodeJS (Back-end)
-> - React (Front-end)
+> - React/TypeScript (Front-end)
 > - Postgres (Banco de Dados)
 > - Canva (Protótipo)
 > - Pacote Office (Documentação)
 > - GitHub (Repositório)
 > - Slack (Comunicação do Po com a empresa)
-
+> - JavaScript (Back-end)
 
 # Backlog do Produto 
 <img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronograma-s-visiona.jpg" />
