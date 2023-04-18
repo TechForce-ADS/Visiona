@@ -31,6 +31,7 @@ const Home: React.FC = () => {
                 <Link to="/List" className='nav-text'><div className="nav-text" id="list">Listagem</div></Link>
                 <Link to="/Contato" className='nav-text'><div className="nav-text" id="cont">Contato</div></Link>
                 <Link to="/Perfil" className='nav-text'><div className="nav-text" id="perf">Meu Perfil</div></Link>
+                <Link to="/Login" className='nav-text'><div className="nav-text" id="login">Login</div></Link>
                 <div className="icon-nav">
                     <img src={icon} alt="Icon"></img>
                 </div>
@@ -43,6 +44,7 @@ const Home: React.FC = () => {
                 <h4 id="Mlist">Listagem</h4>
                 <h4 id="Mcont">Contato</h4>
                 <h4 id="Mperf">Meu Perfil</h4>
+                <h4 id="MLogin">Login</h4>
             </div>
             
         </>

@@ -23,6 +23,7 @@ ReactDOM.render(
            <Route path='/Login' element={<Login />}/>
            <Route path='/Contato' element={<Contato />}/>
            <Route path='/Dashboard' element={<Dashboard />}/>
+           <Route path='/Login' element={<Login />}/>
         </Routes>
 
       </BrowserRouter>
