@@ -11,6 +11,9 @@ import Swal from 'sweetalert2';
 
 
 
+
+
+
 function criarJS() {
   var body = document.querySelector("body");
   body.className = "criar-js";
@@ -41,7 +44,6 @@ function handleClickRegister(values) {
         showConfirmButton: false,
         timer: 1500
       });
-      document.getElementById('register').reset();
     } else {
       Swal.fire({
         icon: 'success',
@@ -49,6 +51,10 @@ function handleClickRegister(values) {
         showConfirmButton: false,
         timer: 1500
       });
+      entraJS();
+      document.getElementById('nome').value = "";
+      document.getElementById('email').value = "";
+      document.getElementById('password').value = "";
     }
   })  
     .catch((error) => {
@@ -93,7 +99,7 @@ function handleClickLogin(values) {
           showConfirmButton: false,
           timer: 1500
         });
-        // Fazer alguma ação após o login, como redirecionar para outra página
+        window.location.href = 'http://localhost:3000/home';   
       }
     })
     .catch((error) => {
@@ -152,14 +158,14 @@ function Login() {
               <Form className="form" id="login">
                 <label className='Label-input'>
                   <FontAwesomeIcon className="icon-modify" icon={faUser} />
-                  <Field name="nome" placeholder="Nome" />
+                  <Field name="nome" placeholder="Nome" id ="nome"/>
                 </label>
                 <label className='Label-input'>
                   <FontAwesomeIcon className="icon-modify" icon={faEnvelope} />
-                  <Field name="email" placeholder="Email" />
+                  <Field name="email" placeholder="Email" id = "email"/>
                 </label>
                 <label className='Label-input'>                    <FontAwesomeIcon className="icon-modify" icon={faLock} />
-                   <Field name="password" placeholder="Senha" type="password" />
+                   <Field name="password" placeholder="Senha" type="password" id = "password"/>
                   </label>
                   <button className="btn btn-second" type="submit">Criar Conta</button>
               </Form>
