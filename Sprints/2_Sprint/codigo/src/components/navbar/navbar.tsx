@@ -28,7 +28,7 @@ const Home: React.FC = () => {
                  */}
                 <Link to="/Home" className='nav-text'><div className="nav-text" id="home">Pagina inicial</div></Link>
                 <Link to="/Dashboard" className='nav-text'><div className="nav-text" id="dash"> Dashbord </div></Link>
-                <Link to="/List" className='nav-text'><div className="nav-text" id="list">Listagem</div></Link>
+                <Link to="/Listagem" className='nav-text'><div className="nav-text" id="list">Listagem</div></Link>
                 <Link to="/Contato" className='nav-text'><div className="nav-text" id="cont">Contato</div></Link>
                 <Link to="/Perfil" className='nav-text'><div className="nav-text" id="perf">Meu Perfil</div></Link>
                 <Link to="/Login" className='nav-text'><div className="nav-text" id="login">Login</div></Link>
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
             <div className="menu">
                 <h4 id="Mhome">Pagina inicial</h4>
                 <h4 id="Mdash">Dashbord</h4>
-                <h4 id="Mlist">Listagem</h4>
+                <h4 id="Mlistagem">Listagem</h4>
                 <h4 id="Mcont">Contato</h4>
                 <h4 id="Mperf">Meu Perfil</h4>
                 <h4 id="MLogin">Login</h4>

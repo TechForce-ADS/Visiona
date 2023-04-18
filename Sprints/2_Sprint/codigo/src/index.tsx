@@ -11,6 +11,7 @@ import Login from './components/login/Login';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/footer/footer';
+import Listagem from './components/list/list';
 
  
 
@@ -20,7 +21,7 @@ ReactDOM.render(
       <Navbar />
         <Routes>
            <Route path='/Home' element={<Home />}/>
-           <Route path='/Login' element={<Login />}/>
+           <Route path='/Listagem' element={<Listagem />}/>
            <Route path='/Contato' element={<Contato />}/>
            <Route path='/Dashboard' element={<Dashboard />}/>
            <Route path='/Login' element={<Login />}/>
