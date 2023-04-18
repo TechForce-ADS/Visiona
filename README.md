@@ -180,7 +180,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
  
  ### Sprint 3</a> - 24/04 - 14/05</p>
  > <p>:x: Dashboard</p>
- > <p>:x:Sistema de edição</p>
+ > <p>:x:Sistema de autenticação</p>
  > <p>:x:Filtro de ordenação</p>
  
 
