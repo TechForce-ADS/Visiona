@@ -211,7 +211,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 > - JavaScript (Back-end)
 
 # Backlog do Produto 
-<img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronograma-s-visiona.jpg" />
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/BACKLOG%20DO%20PRODUTO.png" />
 
 
 
