@@ -169,14 +169,15 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
  
  
  ### Sprint 2</a> - 03/04 - 23/04</p>
- > <p>:x: Sistema de autenticação dos usuários</p>
  > <p>:x: Listagem dos usuários </p>
  > <p>:x: Sistema de exclusão	</p>
- > <p>:x:Adicionar botão de "tem certeza que deseja deletar esse usuário?"</p>
- > <p>:x: Criar entrada de separação Adm/usuário  </p>
+ > <p>:x: Adicionar botão de "tem certeza que deseja deletar esse usuário?"</p>
  > <p>:x: Adicionar barra de pesquisa	</p>
+ > <p>:x: Adicionar botões na listagem </p>
+ > <p>:x: Adicionar novo usuário </p>
+ > <p>:x: Editar informações do usuário </p>
+ > <p>:x: Visualizar informações do usuário </p>
  
-
  ### Sprint 3</a> - 24/04 - 14/05</p>
  > <p>:x: Dashboard</p>
  > <p>:x:Sistema de edição</p>
