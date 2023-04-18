@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*========== Barra de navegação ===========*/
+
+.nav-bar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-adm {
+    width: 100vw;
+    height: 12%;
+    display: flex;    
+}
+
+.logo-nav {
+  margin: 10px 40px 20px;
+  width: 16vw;
+}
+
+.icon-nav{
+   margin-right: 30px;
+   margin-top: -10px; 
+   display: none;
+}
+
+h2 b{
+    font-weight: 400;
+}
+
+.menu{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    background-color: white;
+    z-index: 3;
+    display: none;
+    border: 1px solid gray;
+}
+
+#ha32{
+    margin-top: 290px;
+}
+
+.nav-text {
+    min-width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+    text-decoration:none ;
+    color: black;
+}
+
+.nav-text-adm  {
+    width: 10%;
+    height: 120%;
+    padding: 1px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*========== DASHBOARD ===========*/
+
+.container {
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 30px;
+    z-index: 4;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.cubo {
+    width: clamp(200px,20%,20%);
+    margin-top: 5%;
+    height: 25%;
+    background-color:  rgb(2, 72, 75);
+    transition: all 1s;
+}
+
+.cubo:hover{
+    height: 30%;
+    width: clamp(200px, 25%, 25%);
+}
+
+.cubao:hover{
+    height: 70%;
+    width: clamp(600px, 90%, 90%);
+}
+
+.cubao {
+    width: clamp(600px, 86%, 86%);
+    margin-top: 5%;
+    height: 65%;
+    background-color: rgb(2, 72, 75);
+    transition: all 1s;
+}
+
+
+.mostrar {
+    visibility: visible;
+}
+
+
+img {
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.linha {
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 76%;
+    height: 8px;
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    border-radius: 5px;
+}
+
+
+.linha-adm {
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 30%;
+    height: 8px;
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    border-radius: 5px;
+}
+
+
+.linha-cor {
+    position: absolute;
+    width: 25%;
+    height: 8px;
+    border-radius: 5px;
+    background-color: orange;
+    transition: all 0.5s;
+}
+
+
+.banner {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color:  rgb(2, 72, 75);
+    visibility: visible;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+b{
+    font-weight: 600;
+}
+
+/*===== TELA DE LOGIN =====*/
+
+.containerLogin{
+  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagens/fundo.jpg);
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px ;
+    height: 80%;
+    width:clamp(300px,90%,95%)  ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .first-content{
+    display: flex;
+  }
+   .first-content .second-column{
+      z-index: 11;
+   }
+
+   .content::before{
+    content: "";
+    position: absolute;
+    background-color: #fc5d00;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px ;
+    border-bottom-left-radius: 15px;
+  
+    left: 0;
+  }
+  
+  .title{
+    font-size: 44px;
+    font-weight: bolder;
+    text-transform: capitalize;
+  
+  }
+  .title-primary{
+    color:#fff;
+  }
+  
+  .title-second{
+    color:#fc5d00;
+  }
+  
+  .descricao{
+    font-size:14px ;
+    font-weight: 300;
+    color: #fff;
+    line-height: 20px;
+  }
+  
+  .description-primary{
+    color: #fff;
+  
+  }
+  .description-second{
+    color:#d3d3d3
+  }
+  
+
+  .btn{
+    border-radius: 15px;
+    text-transform: uppercase ;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 40px ;
+    cursor: pointer;
+    font-weight: bold;
+    width: 40%;
+    height: 40px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+  
+  }
+  
+  .btn-primary{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition:background-color 0.3s;
+    font-size: 13px;
+    
+  
+  
+  }
+  
+  .btn-primary:hover{
+    background-color: #fff;
+    color:#fc5d00;
+  
+    
+  }
+  .btn-second{
+    background-color: #fc5d00;
+    border: 1px solid #fc5d00;
+    font-size: 13px;
+    transition:background-color 0.3s;
+  
+  }
+  .btn-second:hover{
+    background-color: #fff;
+    border: 1px solid #fc5d00;
+    color:#fc5d00;
+  }
+  
+  .first-column{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .second-column{
+    width: 60% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .midia-social{
+    margin: 1rem; 
+  }
+  
+  .list-social-midia{
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .item-social-midia{
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 35px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color:#fc5d00;
+    transition:background-color 0.3s;
+  
+  
+  }
+  .link-social-midia:not(:first-child){ 
+    margin-left: 10px;
+  
+  }
+  
+  .link-social-midia:hover .item-social-midia{
+    background-color: #fc5d00;
+    border-color: #fc5d00;
+    color:#fff;
+  }
+  
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+  }
+  
+  .form[id="login"]{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  
+  }
+  
+  .form input{
+    height: 60px;
+    border: none;
+    width: 100%;
+  
+    background-color: #ecf0f1;
+  
+  }
+  
+  .Label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+  
+  }
+  
+  .logo-img{
+    width: 20%;
+    height: 15%;
+    bottom: 10%;
+    position: absolute;
+  }
+  
+  .svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1.3em;
+    overflow: visible;
+    vertical-align: -0.125em;
+  }
+  
+  .icon-modify{
+    color: #fc5d00;
+    padding: 0 10px;
+  }
+
+
+  .cuboLogin{
+    width:clamp(50%, 50%, 50%) ;
+    align-items: center;
+    justify-content: center;
+    
+    
+    }
+    .second-content{
+      position: absolute;
+      display: flex;
+    
+    }
+    
+    .second-content .first-column{
+      order: 2;
+      z-index: -1;
+    }
+    .second-content .second-column{
+      order: 1;
+      z-index: -1;
+    }
+    
+    
+    .password{
+      color: #fc5d00;
+      font-size: 12px;
+      margin: 0 15px;
+      text-align: center;
+    
+    
+    }
+    .password::first-letter{
+      text-transform: capitalize;
+    
+    }
+    
+    
+    .entrar-js .first-content .first-column, 
+    .entrar-js .first-content .second-column{
+      z-index: -1;
+    }
+    
+    
+    .entrar-js .second-content .second-column{
+      z-index: 11;
+    }
+    
+    .entrar-js .second-content .first-column{
+      z-index: 13;
+    }
+    
+    .entrar-js .first-content .first-column, 
+    .entrar-js .first-content .second-column{
+      z-index: -1;
+      
+    
+    }
+    
+    .entrar-js .second-content .first-column,
+    .entrar-js .second-content .second-column{
+      z-index: 11;
+      transition: 1.5s all ;
+      animation: fadeIn2 1.0s;
+      
+    }
+    
+    .entrar-js .content::before{
+      left: 60%;
+      transition: 0.5s all ease;
+      border-top-right-radius: 15px ;
+      border-bottom-right-radius: 15px;  
+      border-top-left-radius: 0px ;
+      border-bottom-left-radius: 0px;  
+    }
+    
+    
+    .criar-js .second-content .first-column, 
+    .criar-js .second-content .second-column{
+      z-index: -1;
+     
+      
+    }
+    
+    .criar-js .first-content .first-column,
+    .criar-js .first-content .second-column{
+      z-index: 11;
+      transition: 1.5s all ;
+      animation: fadeIn 1.5s;
+      
+      
+    }
+    
+    .criar-js .content::before{
+      left: 0;
+      transition: 0.5s all ease;
+      
+    }
+
+      
+    @keyframes slidein {
+        from {
+          left: 0;
+          width: 40%;
+        }
+      
+        25%{
+          left: 5%;
+          width: 50%;
+      
+        }
+      
+        50%{
+          left: 25%;
+          width: 60%;
+        }
+      
+        75%{
+          left: 45;
+          width: 50%;
+      
+        }
+      
+        to{
+          left: 60%;
+          width: 40%;
+        }
+      }
+      
+      
+      @keyframes slideout {
+        from {
+          left: 60%;
+          width: 40%;
+      
+        }
+      
+        25%{
+          left: 45%;
+          width: 50%;
+      
+        }
+      
+        50%{
+          left: 25%;
+          width: 60%;
+        }
+      
+        75%{
+          left: 5%;
+          width: 50%;
+      
+      
+        }
+      
+        to{
+          left: 0;
+          width: 40%;
+      
+        }
+      }
+      
+  /* ==========================*/
+
+
+.banner h2 {
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 10%;
+}
+
+.banner h3 {
+    width: 45%;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 14%;
+    margin-left: 27%;
+}
+
+.banner img {
+    width: clamp(100px,1980px,2000px);
+    height: 100%;
+    display: flex;
+  
+
+}
+
+.five{
+    width: 70%;
+    height: 25%;
+    position: absolute;
+    left: 15%; 
+    margin-top: 30%;
+}
+
+.bannerCont {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background-color: rgb(2, 72, 75);
+    transition: all 1s;
+
+}
+
+.ContContent {
+    left: 11%;
+    top: 40%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all 1s;
+
+}
+
+.ContContent h1 {
+    position: absolute;
+    top: 5%;
+    text-align: center;
+   
+}
+
+Link{
+    background-color: black;
+}
+
+.contato {
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.contato-input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.contato-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 55px 0px 0px 55px;
+    gap: 5px;
+}
+
+span input {
+    height: 38px;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+.contato span {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h3 {
+    font-weight: light ;
+}
+
+.contato-text h2 {
+    font-size: 28px;
+}
+
+.contato-text h3 {
+    font-size: 23px;
+}
+
+#local {
+    width: 60%;
+    border: 1px solid black;
+}
+
+h4{
+    margin: 20px;
+    height: 10%;
+    text-align: center;
+    border-bottom: 2px solid rgb(28, 202, 202);
+}
+
+.d-none {
+    visibility: hidden;
+}
+
+.five h3{
+    font-size: 30px;
+    font-weight:300;
+    color: #ee8600;
+}
+
+
+.five p{
+    text-align: justify;
+}
+
+#gif{
+    height: 200%;
+}
+
+.footer{
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    background-color:  rgb(2, 72, 75);
+    bottom: -120%;
+    display: flex;
+}
+
+.footer-text{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+.footer-icons{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    color: white;
+    
+}
+
+
+.footer-icons2{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.footer-icons h3 :nth-child(1) ::before{
+    width: 30px;
+    display: block;
+    height: 30px;
+   /* background-image: url(icon.png);*/
+    
+    
+}
+
+/*=========rgb(255, 11, 11)ILE ===========*/
+
+@media only screen and (max-width: 600px) {
+    .contato {
+        flex-direction: column;
+    }
+   
+
+    .contato-input {
+        width: 100%;
+
+    }
+
+    .contato-text {
+        width: 100%
+    }
+
+    #local {
+        width: 90%;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .logo-nav {
+        width: 50%;
+    }
+    .linha {
+        display: none;
+    }
+    .icon-nav{
+        display: block;
+    }
+
+    .ContContent h1 {
+       font-size: 25px;
+       top: 0%;
+    }
+
+    .footer{
+        display: none;
+    }
+    .banner h2{
+        font-size: 24px;
+        margin-top: 90px;
+    }
+
+    .banner h3{
+        margin-top: 150px;
+        font-size: 10px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .banner img{
+        object-fit: cover;
+        width: 100%;
+
+    }
+
+    .five img{
+        display: none;
+    }
+   
+    #line{
+        margin-top: 200px;
+        visibility: hidden;
+    }
+    
+
+    .banner h1 {
+       font-size: 20px;
+       margin-top: 40%;
+    
+    
+    }
+
+
+    
+        
+}
+
+    
+/*========== Animações CSS ===========*/
+
+
+    @keyframes fadeIn {
+
+        0% {
+
+            margin-top: 10%;
+            opacity: 0%;
+        }
+
+        100% {
+            margin-top: 5%;
+            opacity: 100%;
+
+        }
+
+    }
+
+    @keyframes fadeInBanner {
+
+        0% {
+            margin-top: 10%;
+            opacity: 0%;
+        }
+
+        100% {
+            margin-top: 0%;
+            opacity: 100%;
+        }
+    }
+
+    @keyframes fadeInFive {
+
+        0% {
+            margin-top: 50%;
+            opacity: 0%;
+        }
+
+        100% {
+            margin-top: 30%;
+            opacity: 100%;
+        }
+    }
+
+
+
+    @keyframes fadeOutBanner {
+
+        0% {
+
+            margin-top: 0%;
+            opacity: 100%;
+
+        }
+
+        100% {
+            margin-top: 10%;
+            opacity: 0%;
+
+        }
+    }
+
+    @keyframes fadeOut {
+
+        0% {
+            margin-top: 5%;
+            opacity: 100%;
+
+
+        }
+
+        100% {
+            margin-top: 10%;
+            opacity: 0%;
+            display: none;
+        }
+
+    }
+
+
+    
