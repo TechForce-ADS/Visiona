@@ -1,7 +1,11 @@
+const { error } = require('console');
 const { User} = require('../models');
 const bcrypt = require('bcryptjs');
 
-
+function errorHandler(err, req, res, next) {
+  console.error(err); // imprime o erro no console
+  return res.status(500).json({ message: "Ocorreu um erro no servidor" });
+}
 
 class UserController {
     async authenticate(req, res) {
@@ -60,7 +64,9 @@ class UserController {
 
     async index(req, res) {
         try{
-            const users = await User.findAll();
+            const users = await User.findAll({
+              order: [['id', 'ASC']]
+            });
 
             return res.status(200).json(users);
         }   catch (error) {
@@ -89,10 +95,10 @@ class UserController {
         try{
             const {id} = req.params;
 
-            const {nome, email, senha} = req.body;
+            const {nome, email, senha, status} = req.body;
 
             await User.update(
-                {nome, email, senha},
+                {nome, email, senha, status},
                 {
                     where: {
                         id: id,
@@ -107,20 +113,22 @@ class UserController {
     }
 
     async destroy(req, res){
-        try{
-            const {id} = req.params;
-
-            await User.destroy({
-                    where: {
-                        id: id,
-                    },
-                }
-            );
-            
-            return res.status(200).json({message: "Usuário excluído com sucesso" });
-        }   catch (erro) {
-            return res.status(400).json({message: "Falha ao excluir o usuário"});
-        }
+      console.log('Método destroy chamado');
+      try{
+          const {id} = req.params;
+          console.log('Id do usuário a ser excluído:', id);
+    
+          await User.destroy({
+                  where: {
+                      id: id,
+                  },
+              }
+          );
+          return res.status(200).json({message: "Usuário excluído com sucesso" });
+      }   catch (erro) {
+          console.log('Erro ao excluir usuário:', erro);
+          return res.status(400).json({message: "Falha ao excluir o usuário"});
+      }
     }
 
 }
