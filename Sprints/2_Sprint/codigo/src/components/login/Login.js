@@ -83,23 +83,31 @@ function handleClickLogin(values) {
   axios.post('http://localhost:3333/users/email', {
     email: values.email,
     senha: values.password,
+    status: values.status,
   })
     .then((response) => {
       const user = response.data.user;
+      
       if (!user) {
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
           text: 'Usuário não encontrado',
         });
-      } else {
+      } if (user && user.status != false) {
         Swal.fire({
           icon: 'success',
           title: 'Login efetuado com sucesso!',
           showConfirmButton: false,
-          timer: 1500
+          timer: 1500,
         });
-        window.location.href = 'http://localhost:3000/home';   
+        window.location.href = 'http://localhost:3000/home'; 
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Conta desativada',
+        });
       }
     })
     .catch((error) => {
