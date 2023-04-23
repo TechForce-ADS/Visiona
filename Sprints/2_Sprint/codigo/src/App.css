@@ -270,6 +270,23 @@ b{
     align-self: center;
     border: none;
     margin-top: 1rem;
+  }
+
+
+  .btn-contact{
+    border-radius: 15px;
+    background-color: #fc5d00;
+    text-transform: uppercase ;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px 40px ;
+    cursor: pointer;
+    font-weight: bold;
+    width: 40%;
+    height: 40px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
   
   }
   
