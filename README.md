@@ -233,5 +233,5 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 <img src = "https://github.com/TechForce-ADS/imagens/blob/main/Burndown-visiona1.png"/>
  
 > 2° Sprint
-<img src = "https://github.com/TechForce-ADS/imagens/blob/main/burn2.png"/> 
+<img src = ""/> 
  
