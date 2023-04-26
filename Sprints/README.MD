@@ -11,9 +11,8 @@
  
  # 2° Sprint
  > Na segunda sprint focamos na criação da listagem, nela estão presentes a edição, visualização e exclusão; juntamente com o termino da página de contato.
- 
-   <p align="">
-  <img src="https://github.com/TechForce-ADS/imagens/blob/main/video3.gif">
+ <p align="">
+ <img src="https://github.com/TechForce-ADS/imagens/blob/main/video3.gif">
  </p>
  
  # 3° Sprint
