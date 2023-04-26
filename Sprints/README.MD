@@ -10,6 +10,8 @@
  </p>
  
  # 2° Sprint
+ > Na segunda sprint focamos na criação da listagem e no termino da página de contato.
+ <img src="https://github.com/TechForce-ADS/imagens/blob/main/video3.gif">
  
  # 3° Sprint
  
