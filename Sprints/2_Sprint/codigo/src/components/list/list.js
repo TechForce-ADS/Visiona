@@ -80,10 +80,23 @@ function List() {
     if (!a.status && b.status) return 1; // a está inativo, b está ativo
     return 0; // a e b têm o mesmo status
   });
-  
+
   return (
+    <>
+    <div className="bannerCont">
+      
+    </div>
+
     <div className="listContent">
+    <div className="ContContent">
+        <h1>Listagem</h1>
+      </div>
+    
       <div className="BarraPesq">
+        
+
+
+
         <input
           type="text"
           placeholder="Pesquisar por nome"
@@ -91,6 +104,8 @@ function List() {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="Pesquisa"
         />
+        <button className="btn-adicionar" >Adicionar</button>
+
       </div>
       <table>
         <thead>
@@ -126,7 +141,7 @@ function List() {
           ))}
         </tbody>
       </table>
-  
+
       {showModal && (
         <UserModal
           isOpen={showModal}
@@ -134,7 +149,7 @@ function List() {
           onClose={handleCloseModal}
         />
       )}
-  
+
       {showEditModal && (
         <EditUserModal
           isOpen={showEditModal}
@@ -144,8 +159,9 @@ function List() {
         />
       )}
     </div>
+    </>
   );
-  
+
 }
 
 export default List;

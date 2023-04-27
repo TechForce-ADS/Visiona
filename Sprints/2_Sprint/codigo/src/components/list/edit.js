@@ -74,6 +74,7 @@ function EditUserModal(props) {
         <input
           id="status"
           type="checkbox"
+          name="status"
           checked={updatedStatus}
           onChange={(e) => setUpdatedStatus(e.target.checked)}
         />

@@ -25,6 +25,7 @@
     "nodemailer": "^6.9.1",
     "nodemon": "^2.0.22",
     "pg": "^8.10.0",
+    "pg-hstore": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
