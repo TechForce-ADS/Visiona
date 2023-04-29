@@ -17,6 +17,9 @@ module.exports = {
       senha: {
         type: Sequelize.STRING
       },
+      cpf: {
+        type: Sequelize.STRING
+      },
       status: {
         type: Sequelize.BOOLEAN,
         defaultValue: true,

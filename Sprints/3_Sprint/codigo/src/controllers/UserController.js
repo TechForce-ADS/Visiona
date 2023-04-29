@@ -37,7 +37,7 @@ class UserController {
 
       async store(req, res) {
         try {
-          const { nome, email, senha } = req.body;
+          const { nome, email, senha, cpf } = req.body;
       
           const userAlreadyExists = await User.findOne ({ where: {email} });
       
@@ -52,7 +52,7 @@ class UserController {
           const salt = await bcrypt.genSalt(10); // Gerar um salt aleatório com 10 rounds
           const hashedSenha = await bcrypt.hash(senha, salt); // Hash da senha usando o salt gerado
       
-          const createdUser = await User.create({ nome, email, senha: hashedSenha }); // Criação do usuário com a senha já criptografada
+          const createdUser = await User.create({ nome, email, senha: hashedSenha, cpf }); // Criação do usuário com a senha já criptografada
       
           return res.status(200).json({message: "Usuário registrado com sucesso"});
       

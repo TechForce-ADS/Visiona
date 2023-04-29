@@ -13,6 +13,7 @@ const UserModal = (props) => {
     <Modal isOpen={isOpen} onRequestClose={onClose} className="user-modal">
       <h2>{user.nome}</h2>
       <p>Email: {user.email}</p>
+      <p>CPF: {user.cpf}</p>
       <p>Perfil da conta: {user.adm ? 'Administrador' : 'Comum'}</p>
       <p>Criado em: {user.createdAt}</p>
       <p>Status: {user.status ? 'Ativo' : 'Inativo'}</p>

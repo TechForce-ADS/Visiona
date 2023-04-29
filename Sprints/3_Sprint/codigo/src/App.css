@@ -623,14 +623,7 @@ b {
   align-items: center;
   margin-top: 13%;
   top: 80%;
- 
-  
- 
-
-
-  
-
-
+  flex-direction: column;
 }
 
 table button {
@@ -790,6 +783,16 @@ th:nth-child(5)::after {
   margin-right: 0;
 }
 
+/*====================*/
+
+.pagination{
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  gap: 5%;
+  list-style: none;
+  
+}
 /*====================*/
 
 .banner h2 {
