@@ -1,5 +1,5 @@
-import '../../App.css'
-import logo from '../../imagens/logo.png'
+import './Login.css'
+import logo from '../../imagens/logoB.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faLinkedin, faSquareGooglePlus } from '@fortawesome/free-brands-svg-icons'
 import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -81,6 +81,7 @@ function handleClickLogin(values) {
     email: values.email,
     senha: values.password,
     status: values.status,
+    adm: values.adm,
   })
     .then((response) => {
       const user = response.data.user;
@@ -91,21 +92,31 @@ function handleClickLogin(values) {
           title: 'Oops...',
           text: 'Usuário não encontrado',
         });
-      } if (user && user.status != false) {
+      }if (user.status === false) {
         Swal.fire({
           icon: 'success',
-          title: 'Login efetuado com sucesso!',
+          title: 'Conta desativada!',
+          showConfirmButton: false,
+          timer: 1500,
+        });}
+        if (user && user.status != false && user.adm != false) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Login Administrardor efetuado!',
           showConfirmButton: false,
           timer: 1500,
         });
-        window.location.href = 'http://localhost:3000/home';
-      } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Conta desativada',
-        });
+        window.location.href = 'http://localhost:3000/Listagem';
       }
+      if (user && user.status != false && user.adm === false) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Login efetuado com sucesso',
+        showConfirmButton: false,
+        timer: 1500,
+      });
+        window.location.href = 'http://localhost:3000/HomeC';
+      } 
     })
     .catch((error) => {
       if (error.response && error.response.status === 401) {

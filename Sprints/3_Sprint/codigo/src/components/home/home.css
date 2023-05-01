@@ -1,0 +1,62 @@
+.five h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #ee8600;
+  }
+  .five p {
+    text-align: justify;
+    padding:1%;
+  }
+  
+  #gif {
+    height: 200%;
+  }
+  
+
+  .banner {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color: rgb(2, 72, 75);
+    visibility: visible;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner h2 {
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 10%;
+  }
+  
+  .banner h3 {
+    width: 45%;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 14%;
+    margin-left: 27%;
+  }
+  
+  .banner img {
+    width: clamp(100px, 1980px, 2000px);
+    height: 100%;
+    display: flex;
+  }
+  
+.five {
+    width: 70%;
+    height: 25%;
+    position: absolute;
+    left: 15%;
+    margin-top: 30%;
+  }
+
+
+  

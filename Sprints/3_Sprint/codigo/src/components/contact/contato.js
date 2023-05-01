@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import local from '../../imagens/local.png';
-import '../../App.css';
+import './contato.css';
+import Navbar from '../navbar/navbarComum';
+
 
 function Contact() {
   const [nome, setNome] = useState('');
@@ -19,6 +21,7 @@ function Contact() {
 
   return (
     <>
+    <Navbar />
       <div className="bannerCont"></div>
       <div className="ContContent">
         <h1>Nossos Contatos</h1>

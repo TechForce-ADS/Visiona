@@ -4,12 +4,11 @@ import satelitegif from '../../imagens/satelite.gif';
 
 import espal from '../../imagens/espal.jpg';
 import five from '../../imagens/five.jpg';
+import Navbar from '../navbar/navbarComum';
 
 
 
-
-import './home.css'
-import Navbar from '../navbar/navbar';
+import '../../App.css'
 
 //import styled from 'styled-components';
 
@@ -21,7 +20,6 @@ import Navbar from '../navbar/navbar';
 const Home: React.FC = () => { 
     return (
         <>
-        
            <Navbar />
             <div className="banner">
                 <h2>A integradora <b>Brasileira</b> de sistemas espaciais</h2>
@@ -33,7 +31,7 @@ const Home: React.FC = () => {
 
             <div className="five">
                 <img src={five} alt="Áreas"></img>
-               
+                <hr id="line"></hr>
 
                 <h3>Quem somos?</h3>
 
@@ -53,7 +51,9 @@ const Home: React.FC = () => {
 
                     
 
-            
+                <hr></hr>
+
+
                 <h3>Missão</h3>
 
 

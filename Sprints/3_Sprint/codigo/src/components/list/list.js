@@ -1,10 +1,12 @@
 import { FaTrash, FaEye, FaPen } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../../App.css';
+import './list.css';
 import UserModal from './view';
 import EditUserModal from './edit';
 import ReactPaginate from 'react-paginate';
+
+import Navbar from '../navbar/navbar';
 
 function List() {
   const [users, setUsers] = useState([]);
@@ -98,6 +100,7 @@ function List() {
 
   return (
     <>
+    <Navbar />
       <div className="bannerCont"></div>
       <div className="listContent">
         <div className="BarraPesq">

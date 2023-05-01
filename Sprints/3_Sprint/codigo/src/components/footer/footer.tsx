@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-import '../../App.css'
+import './footer.css'
 
 //import styled from 'styled-components';
 

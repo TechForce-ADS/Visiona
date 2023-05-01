@@ -8,12 +8,10 @@ function EditUserModal(props) {
 
   const [updatedName, setUpdatedName] = useState(user.nome);
   const [updatedEmail, setUpdatedEmail] = useState(user.email);
-  const [updatedPassword, setUpdatedPassword] = useState(user.senha);
   const [updatedStatus, setUpdatedStatus] = useState(user.status);
 
   const [nome, setNome] = useState(props.user.nome);
   const [email, setEmail] = useState(props.user.email);
-  const [senha, setSenha] = useState(props.user.senha);
   const [status, setStatus] = useState(props.user.status);
 
 
@@ -22,14 +20,12 @@ function EditUserModal(props) {
       await axios.put(`http://localhost:3333/users/${user.id}`, {
         nome: updatedName,
         email: updatedEmail,
-        senha: updatedPassword,
         status: updatedStatus
       });
       
       // Atualiza o estado do componente com os valores atualizados
       setNome(updatedName);
       setEmail(updatedEmail);
-      setSenha(updatedPassword);
       setStatus(updatedStatus);
 
       onClose();
@@ -58,15 +54,6 @@ function EditUserModal(props) {
           type="email"
           value={updatedEmail}
           onChange={(e) => setUpdatedEmail(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="senha">Senha:</label>
-        <input
-          id="senha"
-          type="password"
-          value={updatedPassword}
-          onChange={(e) => setUpdatedPassword(e.target.value)}
         />
       </div>
       <div>
