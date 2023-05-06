@@ -11,17 +11,12 @@
   }
 
 .cubo {
-    width: clamp(200px, 20%, 20%);
-    margin-top: 5%;
-    height: 25%;
-    background-color: rgb(2, 72, 75);
-    transition: all 1s;
+    margin-top: 7%;
+    width: 30%;
+    height: 45%;
+
   }
   
-  .cubo:hover {
-    height: 30%;
-    width: clamp(200px, 25%, 25%);
-  }
   
   .cubao:hover {
     height: 70%;
@@ -40,4 +35,7 @@
     visibility: visible;
   }
 
-  
+  .total{
+    position: absolute;
+    top: 20%;
+  }
