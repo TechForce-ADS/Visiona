@@ -96,35 +96,38 @@ function List() {
     setShowEditModal(true);
   };
 
-// Filtrar usuários com base no termo de pesquisa
-const filteredUsers = users.filter((user) =>
-  user.nome.toLowerCase().includes(searchTerm.toLowerCase())
-);
+  // Filtrar usuários com base no termo de pesquisa
+  const filteredUsers = users.filter((user) =>
+    user.nome.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
-// Classificar usuários com base na coluna selecionada e direção
-const sortedUsers = [...filteredUsers].sort((a, b) => {
-  if (sortOrder.column === 'cpf') {           // se a coluna selecionada for CPF
-    if (sortOrder.direction === 'asc') {      // se a direção de classificação for ascendente
-      return a.cpf.localeCompare(b.cpf);      // comparar os CPFs e retornar o resultado
-    } else {                                  // caso contrário, se a direção de classificação for descendente
-      return b.cpf.localeCompare(a.cpf);      // comparar os CPFs invertidos e retornar o resultado
+  // Classificar usuários com base na coluna selecionada e direção
+  const sortedUsers = [...filteredUsers].sort((a, b) => {
+    if (sortOrder.column === 'cpf') {           // se a coluna selecionada for CPF
+      if (sortOrder.direction === 'asc') {      // se a direção de classificação for ascendente
+        return a.cpf.localeCompare(b.cpf);      // comparar os CPFs e retornar o resultado
+      } else {                                  // caso contrário, se a direção de classificação for descendente
+        return b.cpf.localeCompare(a.cpf);      // comparar os CPFs invertidos e retornar o resultado
+      }
+    } else if (sortOrder.column === 'email') {  // caso contrário, se a coluna selecionada for e-mail
+      if (sortOrder.direction === 'asc') {      // se a direção de classificação for ascendente
+        return a.email.localeCompare(b.email);  // comparar os e-mails e retornar o resultado
+      } else {                                  // caso contrário, se a direção de classificação for descendente
+        return b.email.localeCompare(a.email);  // comparar os e-mails invertidos e retornar o resultado
+      }
+    } if                                        // caso contrário, se nenhuma coluna for selecionada, retornar 0 (sem classificação)
+      (a.status && !b.status) {                 // a está ativo, b está inativo
+      return -1; 
     }
-  } else if (sortOrder.column === 'email') {  // caso contrário, se a coluna selecionada for e-mail
-    if (sortOrder.direction === 'asc') {      // se a direção de classificação for ascendente
-      return a.email.localeCompare(b.email);  // comparar os e-mails e retornar o resultado
-    } else {                                  // caso contrário, se a direção de classificação for descendente
-      return b.email.localeCompare(a.email);  // comparar os e-mails invertidos e retornar o resultado
+    if (!a.status && b.status) {                // a está inativo, b está ativo
+      return 1; 
     }
-  } else {                                    // caso contrário, se nenhuma coluna for selecionada, retornar 0 (sem classificação)
-    return 0;
-  }
-});
-  
+    return 0; // a e b têm o mesmo status
+  });
 
   const indexOfLastUser = (currentPage + 1) * usersPerPage;
   const indexOfFirstUser = indexOfLastUser - usersPerPage;
   const currentUsers = sortedUsers.slice(indexOfFirstUser, indexOfLastUser);
-
 
   return (
     <>
@@ -140,7 +143,7 @@ const sortedUsers = [...filteredUsers].sort((a, b) => {
             className="Pesquisa"
           />
           <select value={sortOrder.column} onChange={(e) => handleSort(e.target.value)} className='ordenacao'>
-            <option value="" >Ordenar por</option>
+            <option value="">Ordenar por</option>
             <option value="cpf">CPF</option>
             <option value="email">Email</option>
           </select>
