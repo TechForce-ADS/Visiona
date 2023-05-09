@@ -1,207 +1,228 @@
 .listContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 13%;
-    top: 80%;
-    flex-direction: column;
-  }
-  
-  table button {
-    border: none;
-    padding: 20px 20px;
-    background-color: #ffffff00;
-  
-  }
-  
-  table button:hover {
-    background-color: antiquewhite;
-    cursor: pointer;
-  }
-  
-  table {
-    margin-top: 10%;
-    border-collapse: collapse;
-    width: clamp(80%, 80%, 80%);
-    text-align: center;
-  }
-  
-  th,
-  td {
-    padding: 16px;
-    text-align: center;
-  
-  }
-  
-  th {
-    background-color: #ee8600;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-    padding: 16px;
-    
-    
-  }
-  
-  tr.inativo {
-    background-color: #ffcccc;
-    
-  
-  }
-  
-  td:first-child,
-  th:first-child {
-    text-align: center;
-  }
-  
-  /* Subtítulos para cada coluna */
-  th:nth-child(1)::after {
-    content: "";
-  }
-  
-  th:nth-child(2)::after {
-    content: "";
-  }
-  
-  th:nth-child(3)::after {
-    content: "";
-  }
-  
-  th:nth-child(4)::after {
-    content: "";
-  }
-  
-  th:nth-child(5)::after {
-    content: "";
-  }
-  
-  .inactive {
-    background-color: #ff00003b;
-  }
-  
-  .Pesquisa {
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    padding: 10px 15px;
-    width: 200px;
-    margin-bottom: 10px;
-  }
-  
-  .BarraPesq {
-    position: absolute;
-    top: 55%;
-    left: 10%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13%;
+  top: 80%;
+  flex-direction: column;
+}
+
+table button {
+  border: none;
+  padding: 20px 20px;
+  background-color: #ffffff00;
+
+}
+
+table button:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+table {
+  margin-top: 10%;
+  border-collapse: collapse;
+  width: clamp(80%, 80%, 80%);
+  text-align: center;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: center;
+
+}
+
+th {
+  background-color: #ee8600;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  padding: 16px;
+
+
+}
+
+tr.inativo {
+  background-color: #ffcccc;
+
+
+}
+
+td:first-child,
+th:first-child {
+  text-align: center;
+}
+
+/* Subtítulos para cada coluna */
+th:nth-child(1)::after {
+  content: "";
+}
+
+th:nth-child(2)::after {
+  content: "";
+}
+
+th:nth-child(3)::after {
+  content: "";
+}
+
+th:nth-child(4)::after {
+  content: "";
+}
+
+th:nth-child(5)::after {
+  content: "";
+}
+
+.inactive {
+  background-color: #ff00003b;
+}
+
+.Pesquisa {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  width: 200px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.ordenacao {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 0px 10px;
+}
+
+option {
+  font-size: medium;
+  font-weight: bold;
+
+}
+
+
+.BarraPesq {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+}
+
 /*===Edição na tabela===*/
 
 
 .edit-user-modal {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    width: 40%;
-    position: absolute;
-    left: 29%;
-    top: 30%;
-  }
-  
-  .edit-user-modal h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .edit-user-modal label {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .edit-user-modal input[type="text"],
-  .edit-user-modal input[type="email"],
-  .edit-user-modal input[type="password"] {
-    font-size: 1.2rem;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  
-  .edit-user-modal input[type="checkbox"] {
-    width: 30px;
-    height: 30px;
-    margin-left: 0px;
-    cursor: pointer;
-  }
-  
-  .edit-user-modal button {
-    font-size: 1.2rem;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 10px;
-    cursor: pointer;
-    background-color: #ffffff70;
-    margin-top: 10px;
-  }
-  
-  .edit-user-modal button:last-child {
-    margin-right: 0;
-  }
-  
-  /*======= PAGINAÇÃO ========*/
-  
-  .pagination{
-    display: flex;
-    padding: 20px;
-    cursor: pointer;
-    gap: 5%;
-    list-style: none;
-    
-  }
-  /*=======  VIEW ========*/
-    
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  width: 40%;
+  position: absolute;
+  left: 29%;
+  top: 30%;
+}
+
+.edit-user-modal h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.edit-user-modal label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.edit-user-modal input[type="text"],
+.edit-user-modal input[type="email"],
+.edit-user-modal input[type="password"] {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.edit-user-modal input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.edit-user-modal button {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #ffffff70;
+  margin-top: 10px;
+}
+
+.edit-user-modal button:last-child {
+  margin-right: 0;
+}
+
+/*======= PAGINAÇÃO ========*/
+
+.pagination {
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  gap: 5%;
+  list-style: none;
+
+}
+
+/*=======  VIEW ========*/
+
 .user-modal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    left: 39%;
-    top: 30%;
-  }
-  
-  .user-modal h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .user-modal p {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .user-modal button {
-    background-color: #fc5d00;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-  
-  .user-modal button:hover {
-    background-color: #bd7044;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  left: 39%;
+  top: 30%;
+}
+
+.user-modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-modal p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.user-modal button {
+  background-color: #fc5d00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.user-modal button:hover {
+  background-color: #bd7044;
+}
+

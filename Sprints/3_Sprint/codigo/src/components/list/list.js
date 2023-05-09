@@ -16,6 +16,7 @@ function List() {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(0);
   const [usersPerPage] = useState(6);
+  const [sortOrder, setSortOrder] = useState({ column: '', direction: '' });
 
   const handlePageChange = ({ selected: selectedPage }) => {
     setCurrentPage(selectedPage);
@@ -57,6 +58,17 @@ function List() {
     }
   };
 
+  const handleSort = (column) => {
+    if (sortOrder.column === column) {
+      setSortOrder({
+        ...sortOrder,
+        direction: sortOrder.direction === 'asc' ? 'desc' : 'asc',
+      });
+    } else {
+      setSortOrder({ column: column, direction: 'asc' });
+    }
+  };
+
   const handleSaveUser = async (user) => {
     try {
       await axios.put(`http://localhost:3333/users/${user.id}`, user);
@@ -84,14 +96,30 @@ function List() {
     setShowEditModal(true);
   };
 
-  const filteredUsers = users.filter((user) =>
-    user.nome.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-  const sortedUsers = [...filteredUsers].sort((a, b) => {
-    if (a.status && !b.status) return -1; // a está ativo, b está inativo
-    if (!a.status && b.status) return 1; // a está inativo, b está ativo
-    return 0; // a e b têm o mesmo status
-  });
+// Filtrar usuários com base no termo de pesquisa
+const filteredUsers = users.filter((user) =>
+  user.nome.toLowerCase().includes(searchTerm.toLowerCase())
+);
+
+// Classificar usuários com base na coluna selecionada e direção
+const sortedUsers = [...filteredUsers].sort((a, b) => {
+  if (sortOrder.column === 'cpf') {           // se a coluna selecionada for CPF
+    if (sortOrder.direction === 'asc') {      // se a direção de classificação for ascendente
+      return a.cpf.localeCompare(b.cpf);      // comparar os CPFs e retornar o resultado
+    } else {                                  // caso contrário, se a direção de classificação for descendente
+      return b.cpf.localeCompare(a.cpf);      // comparar os CPFs invertidos e retornar o resultado
+    }
+  } else if (sortOrder.column === 'email') {  // caso contrário, se a coluna selecionada for e-mail
+    if (sortOrder.direction === 'asc') {      // se a direção de classificação for ascendente
+      return a.email.localeCompare(b.email);  // comparar os e-mails e retornar o resultado
+    } else {                                  // caso contrário, se a direção de classificação for descendente
+      return b.email.localeCompare(a.email);  // comparar os e-mails invertidos e retornar o resultado
+    }
+  } else {                                    // caso contrário, se nenhuma coluna for selecionada, retornar 0 (sem classificação)
+    return 0;
+  }
+});
+  
 
   const indexOfLastUser = (currentPage + 1) * usersPerPage;
   const indexOfFirstUser = indexOfLastUser - usersPerPage;
@@ -100,7 +128,7 @@ function List() {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div className="bannerCont"></div>
       <div className="listContent">
         <div className="BarraPesq">
@@ -111,6 +139,11 @@ function List() {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="Pesquisa"
           />
+          <select value={sortOrder.column} onChange={(e) => handleSort(e.target.value)} className='ordenacao'>
+            <option value="" >Ordenar por</option>
+            <option value="cpf">CPF</option>
+            <option value="email">Email</option>
+          </select>
           <button className="btn-adicionar" >Adicionar</button>
         </div>
         <table>
@@ -157,7 +190,7 @@ function List() {
           containerClassName={'pagination'}
           activeClassName={'active'}
         />
-       
+
         {showModal && (
           <UserModal
             isOpen={showModal}
