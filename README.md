@@ -181,12 +181,15 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
  
  
  ### Sprint 3</a> - 24/04 - 14/05</p>
- > <p>:x: Dashboard</p>
- > <p>:x:Sistema de autenticação</p>
- > <p>:x:Filtro de ordenação</p>
+ > <p>:x::heavy_check_mark: Dashboard</p>
+ > <p>:heavy_check_mark: Filtro de ordenação</p>
+ > <p>:heavy_check_mark: Páginação na listagem</p>
+ > <p>:heavy_check_mark: Diferenciação na entrada adm/usuário</p>
  
 
   ### Sprint 4</a> - 15/05 - 04/06</p>
+ > <p>:x: Meu perfil</p>
+ > <p>:x: Sistema de autenticação</p>
  > <p>:x: Manual do usuário completo</p>
  > <p>:x: Adicionar a funcionalidade "esqueci minha senha"</p>
  > <p>:x: Finalizar documentação </p>
@@ -234,4 +237,6 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
  
 > 2° Sprint
 <img src = "https://github.com/TechForce-ADS/imagens/blob/main/grafico2.png"/> 
- 
+  
+> 3° Sprint
+<img src = />
