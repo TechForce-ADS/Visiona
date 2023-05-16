@@ -156,7 +156,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 > Sprint:
 
- <img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronograma-sprint-novo.png" >
+ <img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronograma-sprint.png" >
  
  ### Sprint 1</a> - 13/03 - 02/04</p>
  > <p>:heavy_check_mark: Design e identidade visual </p>
@@ -181,7 +181,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
  
  
  ### Sprint 3</a> - 24/04 - 14/05</p>
- > <p>:x::heavy_check_mark: Dashboard</p>
+ > <p>:heavy_check_mark: Dashboard</p>
  > <p>:heavy_check_mark: Filtro de ordenação</p>
  > <p>:heavy_check_mark: Páginação na listagem</p>
  > <p>:heavy_check_mark: Diferenciação na entrada adm/usuário</p>
