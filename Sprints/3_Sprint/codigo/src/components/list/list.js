@@ -103,19 +103,13 @@ function List() {
 
   // Classificar usuários com base na coluna selecionada e direção
   const sortedUsers = [...filteredUsers].sort((a, b) => {
-    if (sortOrder.column === 'cpf') {           // se a coluna selecionada for CPF
-      if (sortOrder.direction === 'asc') {      // se a direção de classificação for ascendente
-        return a.cpf.localeCompare(b.cpf);      // comparar os CPFs e retornar o resultado
-      } else {                                  // caso contrário, se a direção de classificação for descendente
-        return b.cpf.localeCompare(a.cpf);      // comparar os CPFs invertidos e retornar o resultado
-      }
-    } else if (sortOrder.column === 'email') {  // caso contrário, se a coluna selecionada for e-mail
-      if (sortOrder.direction === 'asc') {      // se a direção de classificação for ascendente
-        return a.email.localeCompare(b.email);  // comparar os e-mails e retornar o resultado
-      } else {                                  // caso contrário, se a direção de classificação for descendente
-        return b.email.localeCompare(a.email);  // comparar os e-mails invertidos e retornar o resultado
-      }
-    } if                                        // caso contrário, se nenhuma coluna for selecionada, retornar 0 (sem classificação)
+    if (a[sortOrder.column] < b[sortOrder.column]) {
+      return sortOrder.direction === 'asc' ? -1 : 1;
+    }
+    if (a[sortOrder.column] > b[sortOrder.column]) {
+      return sortOrder.direction === 'asc' ? 1 : -1;
+    }
+    if                                        // caso contrário, se nenhuma coluna for selecionada, retornar 0 (sem classificação)
       (a.status && !b.status) {                 // a está ativo, b está inativo
       return -1; 
     }
@@ -142,24 +136,46 @@ function List() {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="Pesquisa"
           />
-          <select value={sortOrder.column} onChange={(e) => handleSort(e.target.value)} className='ordenacao'>
-            <option value="">Ordenar por</option>
-            <option value="cpf">CPF</option>
-            <option value="email">Email</option>
-          </select>
+
           <button className="btn-adicionar" >Adicionar</button>
         </div>
         <table>
           <thead>
             <tr>
-              <th>Nome</th>
-              <th>Email</th>
-              <th>CPF</th>
-              <th>Conta</th>
-              <th>Status</th>
+              <th onClick={() => handleSort('nome')}>
+                Nome
+                {sortOrder.column === 'nome' && (
+                  <span className={`arrow ${sortOrder.direction}`}></span>
+                )}
+              </th>
+              <th onClick={() => handleSort('cpf')}>
+                CPF
+                {sortOrder.column === 'cpf' && (
+                  <span className={`arrow ${sortOrder.direction}`}></span>
+                )}
+              </th>
+              <th onClick={() => handleSort('email')}>
+                E-mail
+                {sortOrder.column === 'email' && (
+                  <span className={`arrow ${sortOrder.direction}`}></span>
+                )}
+              </th>
+              <th onClick={() => handleSort('adm')}>
+                Nivel
+                {sortOrder.column === 'adm' && (
+                  <span className={`arrow ${sortOrder.direction}`}></span>
+                )}
+              </th>
+              <th onClick={() => handleSort('status')}>
+                Status
+                {sortOrder.column === 'status' && (
+                  <span className={`arrow ${sortOrder.direction}`}></span>
+                )}
+              </th>
               <th>Ações</th>
             </tr>
           </thead>
+
           <tbody>
             {currentUsers.map((user) => (
               <tr key={user.id} className={user.status ? "" : "inativo"}>

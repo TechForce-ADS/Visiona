@@ -12,10 +12,13 @@
 
 .cubo {
     margin-top: 7%;
-    width: 30%;
-    height: 45%;
-
+    width: 40%;
+    height: 55%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+
   
   
   .cubao:hover {
@@ -37,5 +40,6 @@
 
   .total{
     position: absolute;
-    top: 20%;
+    left: 40%;
+   top: 20%;
   }

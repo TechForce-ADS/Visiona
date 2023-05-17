@@ -226,3 +226,25 @@ option {
   background-color: #bd7044;
 }
 
+
+
+
+.arrow {
+  display: inline-block;
+  margin-left: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #fff transparent transparent transparent;
+  }
+  
+  .arrow.asc {
+  border-width: 0 4px 4px 4px;
+  border-color: transparent transparent #fff transparent;
+  }
+  
+  .arrow.desc {
+  border-width: 4px 4px 0 4px;
+  border-color: #fff transparent transparent transparent;
+  }
