@@ -239,4 +239,4 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 <img src = "https://github.com/TechForce-ADS/imagens/blob/main/grafico2.png"/> 
   
 > 3° Sprint
-<img src = />
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/burn-visiona3.png"/>
