@@ -1,0 +1,81 @@
+.nav-bar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+
+  .logo-nav {
+    margin: 10px 40px 20px;
+    width: 16vw;
+  }
+  
+  .icon-nav {
+    margin-right: 30px;
+    margin-top: -10px;
+    display: none;
+  }
+  
+  h2 b {
+    font-weight: 400;
+  }
+  
+  .menu {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    background-color: white;
+    z-index: 3;
+    display: none;
+    border: 1px solid gray;
+  }
+  
+  #ha32 {
+    margin-top: 290px;
+  }
+  
+  .nav-text {
+    min-width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-text-adm {
+    width: 10%;
+    height: 120%;
+    padding: 1px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*.linha {
+  background-color: rgba(0, 0, 0, 0.226);
+  width: 76%;
+  height: 8px;
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  border-radius: 5px;
+}
+
+.linha-cor {
+  position: absolute;
+  width: 25%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: orange;
+  transition: all 0.5s;
+}
+*/

@@ -1,0 +1,56 @@
+.container {
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 30px;
+    z-index: 4;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+  }
+
+.cubo {
+    margin-top: 7%;
+    width: 40%;
+    height: 55%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+  h1 {
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    color: #fc5d00;
+  }
+
+ 
+
+  
+  
+  .cubao:hover {
+    height: 70%;
+    width: clamp(600px, 90%, 90%);
+  }
+  
+  .cubao {
+    width: clamp(600px, 86%, 86%);
+    margin-top: 5%;
+    height: 65%;
+    background-color: rgb(2, 72, 75);
+    transition: all 1s;
+  }
+
+  .mostrar {
+    visibility: visible;
+  }
+
+  .total{
+    position: absolute;
+    left: 40%;
+   top: 20%;
+  }

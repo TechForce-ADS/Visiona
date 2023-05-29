@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+img {
+  margin-top: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+
+Link {
+  background-color: black;
+}
+
+span input {
+  height: 38px;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 25px;
+}
+
+h3 {
+  font-weight: light;
+}
+
+h4 {
+  margin: 20px;
+  height: 10%;
+  text-align: center;
+  border-bottom: 2px solid rgb(28, 202, 202);
+}
+
+.d-none {
+  visibility: hidden;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .contato {
+    flex-direction: column;
+  }
+
+  .contato-input {
+    width: 100%;
+  }
+
+  .contato-text {
+    width: 100%
+  }
+
+  #local {
+    width: 90%;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .logo-nav {
+    width: 50%;
+  }
+
+  .linha {
+    display: none;
+  }
+
+  .icon-nav {
+    display: block;
+  }
+
+  .ContContent h1 {
+    font-size: 25px;
+    top: 0%;
+  }
+
+  .five img {
+    display: none;
+  }
+
+  #line {
+    margin-top: 200px;
+    visibility: hidden;
+  }
+
+  }
+
+
+
+
+

@@ -1,0 +1,76 @@
+.contato {
+    width: 100%;
+    height: 80%;
+    display: flex;
+  }
+  
+  .contato-input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+
+  .contato-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 55px 0px 0px 55px;
+    gap: 5px;
+  }
+
+  .contato span {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contato-text h2 {
+    font-size: 28px;
+  }
+  
+  .contato-text h3 {
+    font-size: 23px;
+  }
+
+  .ContContent {
+    left: 11%;
+    top: 40%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all 1s;
+  }
+
+  .ContContent h1 {
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    color: #fc5d00;
+  }
+
+ 
+
+  .bannerCont {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background-color: rgb(2, 72, 75);
+    
+  }
+
+
+
+
+  /*==== Imagem do mapa ====*/
+  #local {
+    width: 60%;
+    border: 1px solid black;
+    
+  }
+  /*============*/
