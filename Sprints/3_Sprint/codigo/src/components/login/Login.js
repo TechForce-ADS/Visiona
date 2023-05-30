@@ -239,5 +239,53 @@ function Login() {
     </div>
   );
 }
+
+import React from 'react';
+import { Formik, Form, Field } from 'formik';
+import * as Yup from 'yup';
+import axios from 'axios';
+
+const validationLogin = Yup.object().shape({
+  email: Yup.string().email('Email inválido').required('Email é obrigatório'),
+  password: Yup.string().required('Senha é obrigatória'),
+});
+
+function Login({ onLogin }) {
+  const handleClickLogin = (values) => {
+    axios
+      .post('http://localhost:3333/users/email', {
+        email: values.email,
+        senha: values.password,
+        status: values.status,
+        adm: values.adm,
+      })
+      .then((response) => {
+        const user = response.data.user;
+
+        if (!user) {
+          // Mostrar mensagem de erro
+        } else {
+          // Efetuar o login e chamar a função onLogin
+          onLogin(user);
+        }
+      })
+      .catch((error) => {
+        // Mostrar mensagem de erro
+      });
+  };
+
+  return (
+    <div>
+      {/* Resto do conteúdo do seu componente Login */}
+      <Formik initialValues={{}} onSubmit={handleClickLogin} validationSchema={validationLogin}>
+        <Form>
+          {/* Campos de login */}
+        </Form>
+      </Formik>
+      {/* Resto do conteúdo do seu componente Login */}
+    </div>
+  );
+}
+
 export default Login;
 
