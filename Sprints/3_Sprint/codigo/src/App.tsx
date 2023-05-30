@@ -16,4 +16,39 @@ const App: React.FC = () => {
   )
 }
 
+import React, { useState } from 'react';
+import Profile from './Profile';
+import Login from './Login';
+
+const App: React.FC = () => {
+  const [loggedInUser, setLoggedInUser] = useState<any>(null);
+
+  // Função para efetuar o login e definir os dados do usuário logado
+  const handleLogin = (user) => {
+    setLoggedInUser(user);
+  };
+
+  // Função para efetuar o logout
+  const handleLogout = () => {
+    setLoggedInUser(null);
+  };
+
+  return (
+    <div>
+      {/* Resto do conteúdo da sua aplicação */}
+      {loggedInUser ? (
+        <div>
+          <button onClick={handleLogout}>Logout</button>
+          <Profile user={loggedInUser} />
+        </div>
+      ) : (
+        <Login onLogin={handleLogin} />
+      )}
+      {/* Resto do conteúdo da sua aplicação */}
+    </div>
+  );
+};
+
+export default App;
+
 export default App;
