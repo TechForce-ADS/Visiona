@@ -27,6 +27,11 @@ const validationRegister = Yup.object().shape({
   cpf: Yup.string().required('CPF é obrigatório').min(11, 'CPF deve ter pelo menos 11 caracteres'),
 });
 
+function saveLoginData(email, senha) {
+  localStorage.setItem('email', email);
+  localStorage.setItem('senha', senha);
+}
+
 function handleClickRegister(values) {
   axios.post('http://localhost:3333/users/register', {
     nome: values.nome,
@@ -92,31 +97,34 @@ function handleClickLogin(values) {
           title: 'Oops...',
           text: 'Usuário não encontrado',
         });
-      }if (user.status === false) {
+      } else if (user.status === false) {
         Swal.fire({
           icon: 'success',
           title: 'Conta desativada!',
           showConfirmButton: false,
           timer: 1500,
-        });}
-        if (user && user.status != false && user.adm != false) {
+        });
+      } else if (user && user.status !== false && user.adm !== false) {
         Swal.fire({
           icon: 'success',
-          title: 'Login Administrardor efetuado!',
+          title: 'Login Administrador efetuado!',
           showConfirmButton: false,
           timer: 1500,
         });
+        localStorage.setItem('isLoggedIn', true);
+        saveLoginData(values.email, values.password); // Salvar os dados de login no localStorage
         window.location.href = 'http://localhost:3000/Listagem';
-      }
-      if (user && user.status != false && user.adm === false) {
-      Swal.fire({
-        icon: 'success',
-        title: 'Login efetuado com sucesso',
-        showConfirmButton: false,
-        timer: 1500,
-      });
+      } else if (user && user.status !== false && user.adm === false) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Login efetuado com sucesso',
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        localStorage.setItem('isLoggedIn', true);
+        saveLoginData(values.email, values.password); // Salvar os dados de login no localStorage
         window.location.href = 'http://localhost:3000/HomeC';
-      } 
+      }
     })
     .catch((error) => {
       if (error.response && error.response.status === 401) {

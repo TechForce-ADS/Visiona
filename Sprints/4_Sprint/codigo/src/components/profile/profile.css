@@ -1,0 +1,11 @@
+.containerProfile {
+  width: 20%;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5efef94;
+  box-shadow:  5px 5px 1px 1px #695f5f48;
+  border-radius: 10px;
+  text-align: center;
+}
+

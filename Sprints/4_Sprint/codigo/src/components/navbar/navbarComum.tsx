@@ -29,6 +29,7 @@ const Home: React.FC = () => {
                 <Link to="/HomeC" className='nav-text'><div className="nav-text" id="home">Pagina inicial</div></Link>
                 <Link to="/Contato" className='nav-text'><div className="nav-text" id="cont">Contato</div></Link>
                 <Link to="/Perfil" className='nav-text'><div className="nav-text" id="perf">Meu Perfil</div></Link>
+                <Link to="/logout" className='nav-text'><div className="nav-text" id="perf">Logout</div></Link>
 
                 <div className="icon-nav">
                     <img src={icon} alt="Icon"></img>

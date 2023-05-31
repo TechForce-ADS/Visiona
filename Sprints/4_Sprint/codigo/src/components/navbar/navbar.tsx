@@ -29,7 +29,7 @@ const Home: React.FC = () => {
                 <Link to="/Home" className='nav-text'><div className="nav-text" id="home">Pagina inicial</div></Link>
                 <Link to="/Dashboard" className='nav-text'><div className="nav-text" id="dash"> Dashbord </div></Link>
                 <Link to="/Listagem" className='nav-text'><div className="nav-text" id="list">Listagem</div></Link>
-                <Link to="/" className='nav-text'><div className="nav-text" id="login">Login</div></Link>
+                <Link to="/logout" className='nav-text'><div className="nav-text" id="perf">Logout</div></Link>
                 <div className="icon-nav">
                     <img src={icon} alt="Icon"></img>
                 </div>

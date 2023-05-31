@@ -1,24 +1,14 @@
 import React from 'react';
-
 import satelitegif from '../../imagens/satelite.gif';
-
 import espal from '../../imagens/espal.jpg';
 import five from '../../imagens/five.jpg';
-
-
-
-
 import './home.css'
 import Navbar from '../navbar/navbar';
-
-//import styled from 'styled-components';
-
-
-
 
 
 
 const Home: React.FC = () => { 
+
     return (
         <>
         

@@ -24,7 +24,14 @@ function List() {
 
   const pageCount = Math.ceil(users.length / usersPerPage);
 
-
+  useEffect(() => {
+    // Verificar se há um usuário logado
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (!isLoggedIn) {
+      // Redirecionar para a tela de login
+      window.location.href = 'http://localhost:3000/';
+    }
+  }, []);
 
   useEffect(() => {
     async function fetchData() {

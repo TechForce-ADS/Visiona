@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import local from '../../imagens/local.png';
 import './contato.css';
 import Navbar from '../navbar/navbarComum';
-
+import {  useEffect } from 'react';
 
 function Contact() {
   const [nome, setNome] = useState('');
@@ -18,6 +18,16 @@ function Contact() {
     const link = `mailto:${emailDestino}?subject=${assunto}&body=${encodeURIComponent(corpoEmail)}`;
     window.location.href = link;
   };
+
+  useEffect(() => {
+    // Verificar se há um usuário logado
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (!isLoggedIn) {
+      // Redirecionar para a tela de login
+      window.location.href = 'http://localhost:3000/';
+    }
+  }, []);
+
 
   return (
     <>
