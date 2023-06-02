@@ -38,7 +38,7 @@ function EditUserModal(props) {
   return (
     <Modal isOpen={isOpen} onClose={onClose} className="edit-user-modal">
       <h2>Editar Usuário</h2>
-      <div>
+      <div className='edit'>
         <label htmlFor="nome">Nome:</label>
         <input
           id="nome"
@@ -47,7 +47,7 @@ function EditUserModal(props) {
           onChange={(e) => setUpdatedName(e.target.value)}
         />
       </div>
-      <div>
+      <div className='edit'>
         <label htmlFor="email">Email:</label>
         <input
           id="email"
@@ -56,8 +56,8 @@ function EditUserModal(props) {
           onChange={(e) => setUpdatedEmail(e.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor="status">Status:</label>
+      <div className='edit'>
+        <label htmlFor="status">Quando assinalado está ATIVO, caso contrário INATIVO:</label>
         <input
           id="status"
           type="checkbox"

@@ -5,18 +5,26 @@ import './list.css';
 import UserModal from './view';
 import EditUserModal from './edit';
 import ReactPaginate from 'react-paginate';
+import DeleteUserModal from './delete';
+import { AiOutlineCheckCircle } from 'react-icons/ai';
 
 import Navbar from '../navbar/navbar';
 
 function List() {
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
+
   const [showModal, setShowModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
+
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [userToDelete, setUserToDelete] = useState(null);
+
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(0);
   const [usersPerPage] = useState(6);
   const [sortOrder, setSortOrder] = useState({ column: '', direction: '' });
+  const [deleteSuccess, setDeleteSuccess] = useState(false);
 
   const handlePageChange = ({ selected: selectedPage }) => {
     setCurrentPage(selectedPage);
@@ -27,8 +35,15 @@ function List() {
   useEffect(() => {
     // Verificar se há um usuário logado
     const isLoggedIn = localStorage.getItem('isLoggedIn');
-    if (!isLoggedIn) {
-      // Redirecionar para a tela de login
+    if (!isLoggedIn ) {
+      window.location.href = 'http://localhost:3000/';
+    }
+  }, []);
+
+  useEffect(() => {
+    // Verificar se há um usuário é admin
+    const adm = localStorage.getItem('adm');
+    if (adm !== 'true') {
       window.location.href = 'http://localhost:3000/';
     }
   }, []);
@@ -44,6 +59,7 @@ function List() {
   if (users.length === 0) {
     return <div>Carregando...</div>;
   }
+
   const getStatus = (status) => {
     return status ? 'Ativo' : 'Inativo';
   };
@@ -53,16 +69,28 @@ function List() {
   };
 
   const handleDelete = async (id) => {
-    const confirmDelete = window.confirm('Deseja realmente excluir o usuário?');
-    if (confirmDelete) {
-      try {
-        await axios.delete(`http://localhost:3333/users/${id}`);
-        setUsers(users.filter((user) => user.id !== id));
-        alert('Usuário excluído com sucesso!');
-      } catch (error) {
-        alert('Não foi possível excluir o usuário');
-      }
+    setUserToDelete(id);
+    setShowDeleteModal(true);
+  };
+
+  const handleDeleteConfirm = async () => {
+    try {
+      await axios.delete(`http://localhost:3333/users/${userToDelete}`);
+      setUsers(users.filter((user) => user.id !== userToDelete));
+      setDeleteSuccess(true);
+    } catch (error) {
+      alert('Não foi possível excluir o usuário');
     }
+    setShowDeleteModal(false);
+  };
+
+  const handleCloseDeleteSuccess = () => {
+    setDeleteSuccess(false);
+  };
+
+
+  const handleDeleteCancel = () => {
+    setShowDeleteModal(false);
   };
 
   const handleSort = (column) => {
@@ -116,14 +144,13 @@ function List() {
     if (a[sortOrder.column] > b[sortOrder.column]) {
       return sortOrder.direction === 'asc' ? 1 : -1;
     }
-    if                                        // caso contrário, se nenhuma coluna for selecionada, retornar 0 (sem classificação)
-      (a.status && !b.status) {                 // a está ativo, b está inativo
-      return -1; 
+    if (a.status && !b.status) {
+      return -1;
     }
-    if (!a.status && b.status) {                // a está inativo, b está ativo
-      return 1; 
+    if (!a.status && b.status) {
+      return 1;
     }
-    return 0; // a e b têm o mesmo status
+    return 0;
   });
 
   const indexOfLastUser = (currentPage + 1) * usersPerPage;
@@ -135,8 +162,8 @@ function List() {
       <Navbar />
       <div className="bannerCont"></div>
       <div className="listContent">
-      <h1> Listagem </h1>
-      
+        <h1> Listagem </h1>
+
         <div className="BarraPesq">
           <input
             type="text"
@@ -145,9 +172,8 @@ function List() {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="Pesquisa"
           />
-
-          
         </div>
+
         <table>
           <thead>
             <tr>
@@ -157,15 +183,15 @@ function List() {
                   <span className={`arrow ${sortOrder.direction}`}></span>
                 )}
               </th>
-              <th onClick={() => handleSort('cpf')}>
-                CPF
-                {sortOrder.column === 'cpf' && (
-                  <span className={`arrow ${sortOrder.direction}`}></span>
-                )}
-              </th>
               <th onClick={() => handleSort('email')}>
                 E-mail
                 {sortOrder.column === 'email' && (
+                  <span className={`arrow ${sortOrder.direction}`}></span>
+                )}
+              </th>
+              <th onClick={() => handleSort('cpf')}>
+                CPF
+                {sortOrder.column === 'cpf' && (
                   <span className={`arrow ${sortOrder.direction}`}></span>
                 )}
               </th>
@@ -187,7 +213,7 @@ function List() {
 
           <tbody>
             {currentUsers.map((user) => (
-              <tr key={user.id} className={user.status ? "" : "inativo"}>
+              <tr key={user.id} className={user.status ? '' : 'inativo'}>
                 <td>{user.nome}</td>
                 <td>{user.email}</td>
                 <td>{user.cpf}</td>
@@ -234,10 +260,24 @@ function List() {
             onClose={() => setShowEditModal(false)}
           />
         )}
+        {showDeleteModal && (
+          <DeleteUserModal
+            isOpen={showDeleteModal}
+            onDeleteConfirm={handleDeleteConfirm}
+            onDeleteCancel={handleDeleteCancel}
+          />
+        )}
+        {deleteSuccess && (
+          <div className="SucessoDelete">
+            <AiOutlineCheckCircle className="delete-success-icon" size="x2" color='green' />
+            Usuário excluído com sucesso!
+            <button id='deleteConfirm'  onClick={handleCloseDeleteSuccess}>Ok!</button>
+          </div>
+          
+        )}
       </div>
     </>
   );
-
 }
 
 export default List;

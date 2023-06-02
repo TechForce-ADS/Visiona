@@ -1,8 +1,80 @@
+* {
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 
-h1 {
-    position: absolute;
-    margin: auto;
-    left: 43%;
-    text-align: center;
-    color: #fc5d00;
-  }
+}
+
+.logoutContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+}
+
+.logout {
+  width: 600px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+.logoutSessao1 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 70%;
+  display: flex;
+  border-radius: 20px;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+.logoutSessao1 h1 {
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 102, 0, 0.904);
+}
+
+.logoutSessao {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 30%;
+  display: flex;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.logoutSessao button {
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  height: 30%;
+  display: flex;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.logoutSessao button:hover {
+  cursor:  pointer;
+}
+
+#botao1{
+  background-color: rgba(255, 0, 0, 0.904);
+}
+
+#botao2{
+  background-color: rgba(255, 102, 0, 0.904);
+}

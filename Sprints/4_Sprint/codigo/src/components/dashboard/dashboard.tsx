@@ -35,8 +35,15 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     // Verificar se há um usuário logado
     const isLoggedIn = localStorage.getItem('isLoggedIn');
-    if (!isLoggedIn) {
-      // Redirecionar para a tela de login
+    if (!isLoggedIn ) {
+      window.location.href = 'http://localhost:3000/';
+    }
+  }, []);
+
+  useEffect(() => {
+    // Verificar se há um usuário é admin
+    const adm = localStorage.getItem('adm');
+    if (adm !== 'true') {
       window.location.href = 'http://localhost:3000/';
     }
   }, []);
@@ -47,13 +54,16 @@ const Dashboard: React.FC = () => {
       <Navbar />
 
       
-      <div className='container'>
+      <div className='containerDash'>
+      <h1 className='tituto'>Dashboard</h1>
       <h1 className='total'>Total de usuários: {totalUsers}</h1>
+      <div className='cubos'>
         <div className='cubo'>
           <Grafico />
         </div>
         <div className='cubo'>
           <Graficoatv />
+        </div>
         </div>
       </div>
       

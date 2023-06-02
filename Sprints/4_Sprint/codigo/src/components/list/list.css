@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 13%;
-  top: 80%;
+
   flex-direction: column;
 }
 
@@ -19,9 +18,19 @@ table button:hover {
   cursor: pointer;
 }
 
-h1 {
+.edit input{
+  background-color: #fff;
+}
+
+.status{
+  font-size: 20px;
+  margin-bottom: 3px
+}
+
+
+.listContent h1 {
   position: absolute;
-  top: 45%;
+  top: 20%;
   text-align: center;
   color: #fc5d00;
 }
@@ -100,6 +109,7 @@ th:nth-child(5)::after {
   margin-bottom: 10px;
   font-size: 1em;
   font-weight: bold;
+  height: 10%;
 }
 
 .ordenacao {
@@ -117,12 +127,12 @@ option {
 
 }
 
-
 .BarraPesq {
   position: absolute;
-  top: 55%;
+  top: 30%;
   left: 10%;
 }
+
 
 /*===Edição na tabela===*/
 
@@ -235,8 +245,6 @@ option {
 }
 
 
-
-
 .arrow {
   display: inline-block;
   margin-left: 5px;
@@ -256,3 +264,89 @@ option {
   border-width: 4px 4px 0 4px;
   border-color: #fff transparent transparent transparent;
   }
+
+
+
+  /*=======  DELETE ========*/
+
+.deleteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  left: 39%;
+  top: 30%;
+}
+
+
+#deleteButton  {
+  background-color: #fc5d00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+#deleteButtonSim {
+  background-color: #fc0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.deleteSessao1{
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.deleteSessao1 h1{
+position: none;
+top:5%
+}
+
+.deleteSessao2{
+  justify-content: space-evenly;
+  align-self: center;
+  display: flex;
+}
+
+.SucessoDelete{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  left: 39%;
+  top: 30%;
+}
+
+#deleteConfirm  {
+  background-color: #fc5d00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}

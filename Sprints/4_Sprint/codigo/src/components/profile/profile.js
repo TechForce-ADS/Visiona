@@ -43,10 +43,10 @@ function Profile() {
         <h2>Meu Perfil</h2>
         {user && (
           <div>
-            <p>Nome: {user.nome}</p>
-            <p>Email: {user.email}</p>
-            <p>CPF: {user.cpf}</p>
-            <p>Cargo: {getAdm(user.adm)}</p>
+            <p><b>Nome:</b> {user.nome}</p>
+            <p><b>Email:</b> {user.email}</p>
+            <p><b>CPF:</b> {user.cpf}</p>
+            <p><b>Cargo:</b> {getAdm(user.adm)}</p>
           </div>
         )}
       </div>

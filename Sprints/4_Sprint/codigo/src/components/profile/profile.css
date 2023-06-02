@@ -1,11 +1,30 @@
 .containerProfile {
-  width: 20%;
-  height: 500px;
-  margin: 0 auto;
+  width: 400px;
+  margin: 5% auto;
   padding: 20px;
-  background-color: #f5efef94;
-  box-shadow:  5px 5px 1px 1px #695f5f48;
+  background-color: #f8f3f3;
+  border: 1px solid #ccc;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.containerProfile h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.containerProfile p {
+  margin-bottom: 10px;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+}
+
+.containerProfile p strong {
+  color: #000;
+}

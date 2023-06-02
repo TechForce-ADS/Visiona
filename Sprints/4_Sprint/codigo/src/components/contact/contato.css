@@ -1,76 +1,89 @@
-.contato {
-    width: 100%;
-    height: 80%;
-    display: flex;
-  }
+.contato-input {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+
+}
+
+.contato-input input {
+  font-size: 20px;
+  height: 40px;
+}
+
+
+.contato-text h2 {
+  font-size: 28px;
+  margin-top: 1%;
+  margin-left: 20%;
   
-  .contato-input {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  
-  }
+}
 
-  .contato-text {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 55px 0px 0px 55px;
-    gap: 5px;
-  }
 
-  .contato span {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-  }
+#formulario {
+  font-size: 19px;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-bottom: 10%;
+}
 
-  .contato-text h2 {
-    font-size: 28px;
-  }
-  
-  .contato-text h3 {
-    font-size: 23px;
-  }
 
-  .ContContent {
-    left: 11%;
-    top: 40%;
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    transition: all 1s;
-  }
+.contato-text h3 {
+  font-size: 23px;
+  margin-top: 3%;
+}
 
-  .ContContent h1 {
-    position: absolute;
-    top: 5%;
-    text-align: center;
-    color: #fc5d00;
-  }
 
- 
+.contato-input span {
+  width: 50%;
+  height: 20%;
+  font-size: 20px;
+}
 
-  .bannerCont {
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    background-color: rgb(2, 72, 75);
-    
-  }
+.ContContent {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+
+.ContContent h1 {
+  text-align: center;
+  color: #fc5d00;
+
+}
+
+.contTitulo {
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 2%;
+
+}
+
+.btn-contact {
+  border-radius: 15px;
+  background-color: #fc5d00;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 40%;
+  height: 10%;
+  border: none;
+
+}
 
 
 
 
-  /*==== Imagem do mapa ====*/
-  #local {
-    width: 60%;
-    border: 1px solid black;
-    
-  }
-  /*============*/
+/*==== Imagem do mapa ====*/
+#local {
+  width: 60%;
+  border: 1px solid black;
+
+}
+
+/*============*/

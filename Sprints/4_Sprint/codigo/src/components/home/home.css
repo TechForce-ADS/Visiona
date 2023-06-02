@@ -1,7 +1,16 @@
+.homeContainer{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 5%;
+}
+
 .five h3 {
     font-size: 30px;
     font-weight: 400;
-    color: #ee8600;
+    color: #5a5757;
   }
   .five p {
     text-align: justify;
@@ -9,53 +18,39 @@
   }
   
   #gif {
-    height: 200%;
+    height: 500px;
   }
   
 
   .banner {
     width: 100%;
-    height: 50%;
-    position: absolute;
-    background-color: rgb(2, 72, 75);
-    visibility: visible;
-    transition: all 1s;
+    height: 400px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-image: url('../../imagens/espal.jpg');
+    background-size: cover;
+
   }
 
   .banner h2 {
-    width: 100%;
-    position: absolute;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 50px;
     font-weight: 300;
-    margin-top: 10%;
   }
   
   .banner h3 {
     width: 45%;
-    position: absolute;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 300;
-    margin-top: 14%;
-    margin-left: 27%;
-  }
-  
-  .banner img {
-    width: clamp(100px, 1980px, 2000px);
-    height: 100%;
-    display: flex;
+    margin-top: 5%;
+
   }
   
 .five {
     width: 70%;
     height: 25%;
-    position: absolute;
-    left: 15%;
-    margin-top: 30%;
   }
 
 

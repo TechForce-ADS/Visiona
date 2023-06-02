@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import local from '../../imagens/local.png';
 import './contato.css';
 import Navbar from '../navbar/navbarComum';
-import {  useEffect } from 'react';
+import { useEffect } from 'react';
 
 function Contact() {
   const [nome, setNome] = useState('');
@@ -28,17 +28,19 @@ function Contact() {
     }
   }, []);
 
-
+ 
   return (
     <>
-    <Navbar />
-      <div className="bannerCont"></div>
+      <Navbar />
+      <div className='contTitulo'>
+        <h1>Contato</h1>
+      </div>
       <div className="ContContent">
-        <h1>Nossos Contatos</h1>
-        <br></br>
-
-        <div className="contato">
           <div className="contato-input">
+          <div className="contato-text">
+          <h2 id="formulario">Caso tenha alguma questão preencha o formulário abaixo:</h2>
+
+          </div>
             <span>
               <label>
                 <h3>Nome Completo</h3>
@@ -72,7 +74,7 @@ function Contact() {
             <button className="btn-contact" onClick={handleEnviarEmail}>Enviar</button>
           </div>
           <div className="contato-text">
-            <h2>Endereço</h2>
+            <h2>ENDEREÇO</h2>
             <h3>Visiona Tecnologia espacial S.A</h3>
             <h3>Estrada Dr. Altino Bondesan, 500</h3>
             <h3>Distrito de Eugênio de Melo - CEP:12247-016</h3>
@@ -81,8 +83,8 @@ function Contact() {
             <br></br>
           </div>
         </div>
-        
-      </div>
+
+
     </>
   )
 }

@@ -25,10 +25,10 @@ const Home: React.FC = () => {
                 <h2>A integradora <b>Brasileira</b> de sistemas espaciais</h2>
                 <h3>Resultante de uma iniciativa única do Governo brasileiro de estimular a criação de uma empresa integradora na
                     indústria espacial, a Visiona é uma joint-venture entre a Embraer Defesa & Segurança e a Telebras.</h3>
-                <img src={espal} alt="Fundo do Espaço"></img>
+
 
             </div>
-
+            <div className='homeContainer'>
             <div className="five">
                 <img src={five} alt="Áreas"></img>
                 <br></br>
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
 
                 <img src={satelitegif} alt="Satélite animado" id="gif"></img>
             </div>
-
+            </div>
         </>
     )
 }

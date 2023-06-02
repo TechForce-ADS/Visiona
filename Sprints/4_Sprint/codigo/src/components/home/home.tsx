@@ -1,6 +1,6 @@
-import React from 'react';
+
 import satelitegif from '../../imagens/satelite.gif';
-import espal from '../../imagens/espal.jpg';
+import React, { useEffect } from 'react';
 import five from '../../imagens/five.jpg';
 import './home.css'
 import Navbar from '../navbar/navbar';
@@ -9,6 +9,22 @@ import Navbar from '../navbar/navbar';
 
 const Home: React.FC = () => { 
 
+    useEffect(() => {
+        // Verificar se há um usuário logado
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        if (!isLoggedIn ) {
+          window.location.href = 'http://localhost:3000/';
+        }
+      }, []);
+    
+      useEffect(() => {
+        // Verificar se há um usuário é admin
+        const adm = localStorage.getItem('adm');
+        if (adm !== 'true') {
+          window.location.href = 'http://localhost:3000/HomeC';
+        }
+      }, []);
+    
     return (
         <>
         
@@ -17,15 +33,11 @@ const Home: React.FC = () => {
                 <h2>A integradora <b>Brasileira</b> de sistemas espaciais</h2>
                 <h3>Resultante de uma iniciativa única do Governo brasileiro de estimular a criação de uma empresa integradora na
                     indústria espacial, a Visiona é uma joint-venture entre a Embraer Defesa & Segurança e a Telebras.</h3>
-                <img src={espal} alt="Fundo do Espaço"></img>
-
             </div>
-
+<div className='homeContainer'>
             <div className="five">
                 <img src={five} alt="Áreas">
                 </img>
-
-                
 
                 <h3>Quem somos?</h3>
                 <br>
@@ -75,6 +87,7 @@ const Home: React.FC = () => {
                 <br></br>
 
                 <img src={satelitegif} alt="Satélite animado" id="gif"></img>
+            </div>
             </div>
 
         </>

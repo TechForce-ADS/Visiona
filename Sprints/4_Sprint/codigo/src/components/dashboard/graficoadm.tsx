@@ -59,10 +59,10 @@ const Grafico: React.FC = () => {
         {
           label: '- Quantidade de usuarios',
           data: [activeUsers, inactiveUsers],
-          backgroundColor: ['#36a2eb', '#ff6384'],
+          backgroundColor: ['#fc5d00', '#669999'],
           borderWidth: [3],
           borderColor: ['black'],
-          hoverBackgroundColor: ['#AA77eb', '#ff0084'],
+          hoverBackgroundColor: ['#e34a02', '#476b6b'],
         },
       ],
     };
