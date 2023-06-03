@@ -45,7 +45,6 @@
     font-size: 18px;
     font-weight: 300;
     margin-top: 5%;
-
   }
   
 .five {
@@ -54,4 +53,27 @@
   }
 
 
+
+  @media only screen and (max-width: 600px) {
+    
+    .nav-text {
+      display: none;
+    }
+  
+    
+    .banner h2 {
+      font-size: 20px;
+    }
+
+    .banner h3 {
+      width: 100%;
+      font-size: 16px; 
+    }
+     
+    .five img {
+      display: none;
+    }
+  
+  
+    }
   

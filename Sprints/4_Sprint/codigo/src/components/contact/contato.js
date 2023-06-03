@@ -74,7 +74,8 @@ function Contact() {
             <button className="btn-contact" onClick={handleEnviarEmail}>Enviar</button>
           </div>
           <div className="contato-text">
-            <h2>ENDEREÇO</h2>
+          <hr></hr>
+            <h2 id='endereco'>ENDEREÇO</h2>
             <h3>Visiona Tecnologia espacial S.A</h3>
             <h3>Estrada Dr. Altino Bondesan, 500</h3>
             <h3>Distrito de Eugênio de Melo - CEP:12247-016</h3>

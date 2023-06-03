@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './profile.css';
 import Navbar from '../navbar/navbarComum';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser} from '@fortawesome/free-solid-svg-icons'
 
 
 function Profile() {
@@ -40,6 +42,7 @@ function Profile() {
     <div>
       <Navbar />
       <div className="containerProfile">
+      <FontAwesomeIcon icon={faUser} size='4x' color='orange'/>
         <h2>Meu Perfil</h2>
         {user && (
           <div>

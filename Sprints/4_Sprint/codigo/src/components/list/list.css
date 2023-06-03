@@ -13,6 +13,7 @@ table button {
 
 }
 
+
 table button:hover {
   background-color: antiquewhite;
   cursor: pointer;
@@ -350,3 +351,65 @@ top:5%
   margin-top: 20px;
   cursor: pointer;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .listContent {
+    margin: 20px;
+  }
+
+  .listContent h1 {
+    font-size: 1.5rem;
+    top: 10%;
+  }
+
+  .BarraPesq {
+    top: 20%;
+  }
+
+  .edit-user-modal {
+    width: 90%;
+    left: 50%;
+    top: 20%;
+  }
+
+  .user-modal {
+    width: 90%;
+    max-width: none;
+    height: auto;
+    left: 50%;
+    top: 20%;
+  }
+
+  .deleteContainer {
+    width: 90%;
+    max-width: none;
+    height: auto;
+    left: 50%;
+    top: 20%;
+  }
+
+  .SucessoDelete {
+    width: 90%;
+    max-width: none;
+    height: auto;
+    left: 50%;
+    top: 20%;
+  }
+
+  .Pesquisa{
+    display: none;
+  }
+
+  .table-container {
+    overflow-x: auto; /* Adicionado para permitir rolagem horizontal */
+  }
+
+  table {
+    margin-top: 10%;
+    border-collapse: collapse;
+    width: 10%;
+    text-align: center;
+  }
+}
+  

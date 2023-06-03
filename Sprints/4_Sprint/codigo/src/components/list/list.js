@@ -159,6 +159,7 @@ function List() {
 
   return (
     <>
+
       <Navbar />
       <div className="bannerCont"></div>
       <div className="listContent">
@@ -173,7 +174,6 @@ function List() {
             className="Pesquisa"
           />
         </div>
-
         <table>
           <thead>
             <tr>
