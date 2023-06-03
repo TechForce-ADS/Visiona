@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '../../index.tsx';
 import axios from 'axios';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import Swal from 'sweetalert2';
 import { IMaskInput } from "react-imask";
@@ -22,8 +22,11 @@ function entraJS() {
 const validationRegister = Yup.object().shape({
   nome: Yup.string().required('Nome é obrigatório'),
   email: Yup.string().email('Email inválido').required('Email é obrigatório'),
-  password: Yup.string().required('Senha é obrigatória'),
   cpf: Yup.string().required('CPF é obrigatório').min(11, 'CPF deve ter pelo menos 11 caracteres'),
+  password: Yup.string().required('Senha é obrigatória'),
+  confirmPassword: Yup.string()
+    .oneOf([Yup.ref('password'), null], 'As senhas devem ser iguais')
+    .required('Confirme sua senha'),
 });
 
 function saveLoginData(email, senha) {
@@ -38,6 +41,7 @@ function Login() {
         nome: values.nome,
         email: values.email,
         senha: values.password,
+        confirmarSenha: values.confirmPassword,
         cpf: values.cpf,
       })
       .then((response) => {
@@ -58,10 +62,17 @@ function Login() {
           iconColor: '#fc5d00',
           text: 'Esse usuário já existe',
           confirmButtonColor: '#fc5d00',
-          
+
         });
       });
-  }
+
+
+    }
+
+    const validationLogin = Yup.object().shape({
+      email: Yup.string().email('Email inválido').required('Email é obrigatório'),
+      password: Yup.string().required('Senha é obrigatória'),
+    });
 
   function handleClickLogin(values) {
     axios
@@ -95,7 +106,6 @@ function Login() {
             timer: 1500,
           });
 
-          
           localStorage.setItem('isLoggedIn', true);
           localStorage.setItem('adm', true);
           saveLoginData(values.email, values.password);
@@ -144,6 +154,39 @@ function Login() {
       }
     }
   }
+
+  function handleForgotPassword(email) {
+    axios
+      .post('http://localhost:3333/users/recover', {
+        email: email,
+      })
+      .then((response) => {
+        console.log(response.data);
+        Swal.fire({
+          icon: 'success',
+          title: 'Email de recuperação de senha enviado com sucesso',
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => {
+        console.log(error.response.data);
+        let errorMessage = 'Ocorreu um erro ao enviar o email de recuperação de senha';
+  
+        if (error.response && error.response.status === 400) {
+          const { message } = error.response.data;
+          errorMessage = message;
+        }
+        Swal.fire({
+          iconColor: '#fc5d00',
+          icon: 'error',
+          confirmButtonColor: '#fc5d00',
+          text: errorMessage,
+        });
+      });
+  }
+  
+  
 
   return (
     <div className="containerLogin">
@@ -205,6 +248,11 @@ function Login() {
                   id="passwordC"
                 />
               </label>
+              <label className="Label-input">
+                <FontAwesomeIcon className="icon-modify" icon={faLock} />
+                <Field name="confirmPassword" placeholder="Confirmar Senha" type="password" id="confirmPassword" />
+                <ErrorMessage name="confirmPassword" component="div" className="error-message" />
+              </label>
 
               <button className="btn btn-second" type="submit">
                 Criar Conta
@@ -226,35 +274,32 @@ function Login() {
         </div>
         <div className="second-column">
           <h2 className="title title-second">Login</h2>
-          <Formik
-            initialValues={{}}
-            onSubmit={handleClickLogin}
-          >
-            <Form className="form" id="login">
-              <label className="Label-input">
-                <FontAwesomeIcon className="icon-modify" icon={faEnvelope} />
-                <Field
-                  name="email"
-                  placeholder="Email"
-                  id="emailL"
-                  onKeyDown={(event) => handleKeyDown(event, document.getElementById('passwordL'))}
-                />
-              </label>
-              <label className="Label-input">
-                <FontAwesomeIcon className="icon-modify" icon={faLock} />
-                <Field
-                  name="password"
-                  placeholder="Senha"
-                  type="password"
-                  id="passwordL"
-                  onKeyDown={(event) => handleKeyDown(event, document.getElementById('checkbox'))}
-                />
-              </label>
-              <button className="btn btn-second" type="submit">
-                Entrar
-              </button>
-            </Form>
-          </Formik>
+         <Formik
+                initialValues={{}}
+                onSubmit={handleClickLogin}
+                validationSchema={validationLogin}
+              >
+                {formikProps => (
+                  <Form className="form">
+                    <label className="Label-input">
+                      <FontAwesomeIcon className="icon-modify" icon={faEnvelope} />
+                      <Field name="email" placeholder="Email" />
+                      <ErrorMessage name="email" component="div" className="error-message" />
+                    </label>
+                    <label className="Label-input">
+                      <FontAwesomeIcon className="icon-modify" icon={faLock} />
+                      <Field type="password" name="password" placeholder="Senha" />
+                      <ErrorMessage name="password" component="div" className="error-message" />
+                    </label>
+                    <a className="password" href="javascript:void(0)" onClick={() => handleForgotPassword(formikProps.values.email)}>
+                      Esqueceu sua senha?
+                    </a>
+                    <button className="btn btn-second" type="submit">
+                      Entrar
+                    </button>
+                  </Form>
+                )}
+              </Formik>
         </div>
       </div>
 

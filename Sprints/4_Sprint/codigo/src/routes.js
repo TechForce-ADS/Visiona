@@ -9,11 +9,13 @@ routes.get("/health", (req, res) => {
 
 routes.get('/users/email/:email', UserController.showByEmail);
 routes.post('/users/email', UserController.authenticate);
-routes.post('/users/email', UserController.authenticate);
 routes.post('/users/register', UserController.store);
 routes.get("/users", UserController.index);
 routes.get('/users/:id', UserController.show);
 routes.put('/users/:id', UserController.update);
 routes.delete("/users/:id", UserController.destroy);
+routes.post('/api/reset-password', UserController.resetPassword);
+routes.post('/users/recover', UserController.recover); 
+ 
 
 module.exports = routes;

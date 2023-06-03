@@ -14,6 +14,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/footer/footer';
 import Listagem from './components/list/list';
 import Logout from './components/logout/logout';
+import Recuperar from './components/recuperar/recuperar';
 
  
 
@@ -30,6 +31,7 @@ ReactDOM.render(
            <Route path='/Contato' element={<Contato />}/>
            <Route path='/Dashboard' element={<Dashboard />}/>
            <Route path='/' element={<Login />}/>
+           <Route path='/Recuperar' element={<Recuperar/>}/>
         </Routes>
 
       </BrowserRouter>
