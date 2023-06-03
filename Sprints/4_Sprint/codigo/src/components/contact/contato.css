@@ -7,6 +7,12 @@
 
 }
 
+.contato-text {
+
+  justify-content: center;
+  text-align: center;
+}
+
 .contato-input input {
   font-size: 20px;
   height: 40px;
@@ -16,7 +22,7 @@
 .contato-text h2 {
   font-size: 28px;
   margin-top: 1%;
-  margin-left: 20%;
+  
   
 }
 
@@ -97,6 +103,15 @@
     flex-direction: column;
   }
 
+
+  .contato-input span {
+    width: 50%;
+    height: 20%;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
   .contato-input {
     width: 100%;
   }
@@ -120,6 +135,12 @@
     margin-top: 100%;
   
   }
+
+  .contato-text h3 {
+    font-size: 17px;
+    margin-top: 3%;
+  }
+  
 
   #local {
     display: none;

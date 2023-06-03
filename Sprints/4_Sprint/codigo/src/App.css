@@ -25,7 +25,6 @@ Link {
 }
 
 
-
 h3 {
   font-weight: light;
 }
@@ -37,9 +36,6 @@ h4 {
   border-bottom: 2px solid rgb(28, 202, 202);
 }
 
-.d-none {
-  visibility: hidden;
-}
 
 
 

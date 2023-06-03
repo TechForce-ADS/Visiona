@@ -264,7 +264,7 @@ function Login() {
 
       <div className="content second-content">
         <div className="first-column">
-          <h2 className="title title-primary">Bem-Vindo!</h2>
+          <h2 className="title title-primary">Bem-vindo!</h2>
           <p className="descricao description-primary">Colaborador</p>
           <p className="descricao description-primary">Caso não tenha cadastro!</p>
           <button className="btn btn-primary" onClick={criarJS}>

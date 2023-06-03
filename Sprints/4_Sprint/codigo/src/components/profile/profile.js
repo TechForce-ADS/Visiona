@@ -41,9 +41,10 @@ function Profile() {
   return (
     <div>
       <Navbar />
+      <div className='profile'>
       <div className="containerProfile">
       <FontAwesomeIcon icon={faUser} size='4x' color='orange'/>
-        <h2>Meu Perfil</h2>
+        <h2>Meus Dados</h2>
         {user && (
           <div>
             <p><b>Nome:</b> {user.nome}</p>
@@ -53,6 +54,7 @@ function Profile() {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 }

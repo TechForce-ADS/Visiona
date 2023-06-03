@@ -55,8 +55,8 @@ const Dashboard: React.FC = () => {
 
       
       <div className='containerDash'>
-      <h1 className='tituto'>Dashboard</h1>
-      <h1 className='total'>Total de usuários: {totalUsers}</h1>
+      <h1 id='tituto'>Dashboard</h1>
+      <h1 id='total'>Total de usuários: {totalUsers}</h1>
       <div className='cubos'>
         <div className='cubo'>
           <Grafico />

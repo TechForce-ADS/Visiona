@@ -1,25 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../imagens/logo.png';
-import icon from '../../imagens/icon.png';
-import '../navbar/navbar.css'
+import logoLB from '../../imagens/logoLB.png';
+
+import '../navbar/navbar.css';
 import { Link, useLocation } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const location = useLocation();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 600);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
 
   return (
     <>
       <div className="nav-bar">
-        <div className="logo-nav">
-            
-          <img src={logo} alt="Logo Visiona"></img>
+      <div className="logo-nav-adm">
+          <img src={isMobile ? logoLB : logo} alt="Logo Visiona"></img>
         </div>
         <div className="nav-links">
-          <Link
+        <Link
             to="/Home"
             className={`nav-link ${location.pathname === '/Home' ? 'active' : ''}`}
           >
-            Página inicial
+            {isMobile ? 'Início' : 'Página Inicial'}
           </Link>
           <Link
             to="/Dashboard"
@@ -39,11 +56,10 @@ const Home: React.FC = () => {
           >
             Logout
           </Link>
-        </div>
-        <div className="icon-nav">
-          <img src={icon} alt="Icon"></img>
+      
         </div>
       </div>
+      
       <hr></hr>
     </>
   );

@@ -1,16 +1,24 @@
+* {
+  justify-content: center;
+  align-items: normal;
+  box-sizing: border-box;
+}
+
 .containerProfile {
-  width: 400px;
-  margin: 5% auto;
-  padding: 20px;
-  background-color: #f8f3f3;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
+  width: 30%;
+  height: 50%;
+  background-color: #ffffff;
+  border: 10px solid #fc5d00;;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: -15%;
+}
+
+.profile{
+width: 100%;
+height: 100vh;
+display: flex;
 }
 
 .containerProfile h2 {
@@ -28,4 +36,26 @@
 
 .containerProfile p strong {
   color: #000;
+}
+
+.containerProfile b {
+  color: #000;
+  font-weight: 800;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+
+.containerProfile {
+  width: 100%;
+  height: 60%;
+  background-color: #ffffff;
+  border: 10px solid #fc5d00;;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-top: -15%;
+}
+
 }

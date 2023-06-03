@@ -174,7 +174,7 @@ function List() {
             className="Pesquisa"
           />
         </div>
-        <table>
+        <table id='table-container'>
           <thead>
             <tr>
               <th onClick={() => handleSort('nome')}>

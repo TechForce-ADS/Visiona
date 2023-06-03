@@ -18,15 +18,53 @@
 }
 
 
+#total{
+  color: black;
+}
+
+#tituto{
+  color: rgb(88, 83, 83);
+}
 
 .cubos {
   gap: 10%;
   width: 100%;
   display: flex;
 
-
 }
 
 
 
+
+@media only screen and (max-width: 600px) {
+
+  .cubos {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .cubo {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  #total{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 5%;
+  }
+  
+  #tituto{
+    color: rgb(88, 83, 83);
+    font-size: 20px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  
+
+}
 

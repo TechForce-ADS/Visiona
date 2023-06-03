@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './recuperar.css'
+import logo from '../../imagens/logoB.png';
 
 function Recuperar() {
   const [password, setPassword] = useState('');
@@ -38,7 +40,10 @@ function Recuperar() {
   };
 
   return (
-    <div>
+    <div className='recuperar'>
+      <img src={logo} alt="Logo Visiona"></img>
+      <div className='recBorder'>
+      <div className='recContainer'>
       <h1>Redefinição de Senha</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="password">Nova senha:</label>
@@ -49,7 +54,6 @@ function Recuperar() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-
         <label htmlFor="confirmPassword">Confirmar senha:</label>
         <input
           type="password"
@@ -58,9 +62,12 @@ function Recuperar() {
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
         />
-
-        <button type="submit">Redefinir Senha</button>
+        <div className='recSessao1'>
+        <button className='recBtn' type="submit">Redefinir</button>
+        </div>
       </form>
+      </div>
+    </div>
     </div>
   );
 }

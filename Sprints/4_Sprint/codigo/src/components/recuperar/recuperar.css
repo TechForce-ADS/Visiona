@@ -1,0 +1,117 @@
+.recuperar{
+width: 100vw;
+height: 100vh;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+background-image: url(../../imagens/fundo.jpg);
+}
+
+
+.recuperar img{
+    width: 20%;
+    height: 15%;
+    margin-bottom: 3%;
+}
+
+.recContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #ffffff;
+   
+}
+
+.recBorder{
+    width: 30%;
+    height: 35%;
+    border:  20px solid #fc5d00;
+    border-radius: 15px;
+    background-color:#fc5d00;
+}
+
+.recContainer h1{
+    margin-top: 5%;
+    color: #fc5d00;
+}
+
+.recContainer input{
+    width: 100%;
+    height: 15%;
+    border-radius: 15px;   
+    outline: none;
+    background-color: rgb(245, 161, 66);
+}
+
+.recContainer label{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    
+}
+
+.recSessao1{
+    width: 30%;
+    height: 15%;
+    display: flex;
+    margin-top: 7%;
+    margin-left:70%;
+}
+
+
+.recContainer form{
+    width: 60%;
+    height: 100%;
+    justify-content: left;
+    align-items:start  ;
+}
+
+.recBtn{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #fc5d00;
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .recContainer h1{
+        font-size: 20px;
+    }
+    
+
+    .recContainer{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .recBtn{
+        width: 100%;
+        margin-right: 60%;
+        font-size: 20px;
+    }
+    
+    .recBorder{
+        width: 80%;
+        height: 35%;
+        border:  20px solid #fc5d00;
+        border-radius: 15px;
+        background-color:#fc5d00;
+    }
+
+
+    .recuperar img{
+        width: 55%;
+        height: 15%;
+        margin-bottom: 3%;
+    }
+
+
+}

@@ -58,7 +58,7 @@ const Graficoatv: React.FC = () => {
         {
           label: '- Quantidade de usuarios',
           data: [activeUsers, inactiveUsers],
-          backgroundColor: ['#fc5d00', '#669999'],
+          backgroundColor: ['#fc5d00', '#979692'],
           borderWidth: [3],
           borderColor: ['black'],
           hoverBackgroundColor: ['#e34a02', '#476b6b'],
