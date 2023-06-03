@@ -152,7 +152,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 # Cronograma e Sprint
 
-<img src = "https://github.com/TechForce-ADS/imagens/blob/main/BACKLOG%20DO%20PRODUTO%20(1).png" />
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/BACKLOG%20DO%20PRODUTO%20(3).png" />
 
 > Sprint:
 
@@ -239,4 +239,4 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 <img src = "https://github.com/TechForce-ADS/imagens/blob/main/grafico2.png"/> 
   
 > 3° Sprint
-<img src= "https://github.com/TechForce-ADS/imagens/blob/main/Imagem3.jpg" />
+<img src= "https://github.com/TechForce-ADS/imagens/blob/main/Imagem3.png" />
