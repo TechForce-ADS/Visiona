@@ -34,9 +34,10 @@ function Recuperar() {
     } else {
       alert('As senhas não coincidem. Por favor, tente novamente.');
     }
-
+    
     setPassword('');
     setConfirmPassword('');
+    window.location.href = 'http://localhost:3000';
   };
 
   return (

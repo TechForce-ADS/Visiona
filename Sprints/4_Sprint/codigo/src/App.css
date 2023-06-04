@@ -52,39 +52,21 @@ h4 {
     width: 100%
   }
 
-  #local {
-    width: 90%;
-  }
-
   .nav-text {
     display: none;
   }
 
-  .logo-nav {
-    width: 50%;
-  }
 
-  .linha {
-    display: none;
-  }
 
-  .icon-nav {
-    display: block;
-  }
 
   .ContContent h1 {
     font-size: 25px;
     top: 0%;
   }
 
-  .five img {
-    display: none;
-  }
+  
 
-  #line {
-    margin-top: 200px;
-    visibility: hidden;
-  }
+  
 
   }
 
