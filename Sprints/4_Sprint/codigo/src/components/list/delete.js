@@ -17,7 +17,7 @@ function Delete({ isOpen, onDeleteConfirm, onDeleteCancel }) {
           <h3 id='excluir'>Excluindo usuário</h3>
             <FontAwesomeIcon icon={faTriangleExclamation} size="4x" color='red'/>
             
-            <p>Tem certeza de que deseja excluir o usuário?</p>
+            <p>Tem certeza de que deseja excluir o usuário? </p>
           </div>
           <div className="deleteSessao2">
             <button id="deleteButtonSim" onClick={onDeleteConfirm}>

@@ -97,6 +97,12 @@ th:nth-child(5)::after {
 }
 
 
+tbody hr {
+  height: 3px;
+  background: rgb(119, 116, 116);
+  visibility: hidden;
+}
+
 .Pesquisa {
   border-radius: 20px;
   border: 1px solid #ccc;
@@ -216,6 +222,22 @@ option {
   top: 30%;
 }
 
+.deleteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+
 .user-modal h2 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -278,7 +300,7 @@ option {
 
 
 #deleteButtonSim {
-  background-color: #fc0000;
+  background-color: #b3adad;
   color: white;
   border: none;
   border-radius: 5px;
@@ -389,13 +411,7 @@ color: #000000;
     top: 20%;
   }
 
-  .deleteContainer {
-    width: 90%;
-    max-width: none;
-    height: auto;
-    left: 50%;
-    top: 20%;
-  }
+ 
 
   .SucessoDelete {
     width: 90%;
@@ -427,6 +443,12 @@ tr:nth-child(even) {
 
 tr.inativo {
   background-color: #f1aaaa;
+}
+
+tbody hr {
+  height: 3px;
+  background: rgb(119, 116, 116);
+  visibility: visible;
 }
 
 

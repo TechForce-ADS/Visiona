@@ -219,7 +219,9 @@ function List() {
                 <td>{user.cpf}</td>
                 <td>{getAdm(user.adm)}</td>
                 <td>{getStatus(user.status)}</td>
+                
                 <td>
+
                   <button onClick={() => handleViewUser(user)}>
                     <FaEye />
                   </button>
@@ -230,7 +232,9 @@ function List() {
                     <FaPen />
                   </button>
                 </td>
+                <hr></hr>
               </tr>
+              
             ))}
           </tbody>
         </table>

@@ -1,5 +1,6 @@
 import './Login.css'
 import logo from '../../imagens/logoB.png'
+import logoBST from '../../imagens/logoBST.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '../../index.tsx';
@@ -198,6 +199,7 @@ function Login() {
           <button className="btn btn-primary" onClick={entraJS}>
             Acesse a sua conta
           </button>
+          <img src={logoBST} alt="logoBST" className='logo-img-mobile'></img>
           <img src={logo} alt="logo" className='logo-img' onClick={criarJS}></img>
         </div>
         <div className="second-column">
@@ -254,7 +256,7 @@ function Login() {
                 <ErrorMessage name="confirmPassword" component="div" className="error-message" />
               </label>
 
-              <button className="btn btn-second" type="submit">
+              <button id="btnCadastro" className="btn btn-second" type="submit">
                 Criar Conta
               </button>
             </Form>
@@ -263,13 +265,14 @@ function Login() {
       </div>
 
       <div className="content second-content">
-        <div className="first-column">
+        <div id="TextCadastro" className="first-column">
           <h2 className="title title-primary">Bem-vindo!</h2>
           <p className="descricao description-primary">Colaborador</p>
           <p className="descricao description-primary">Caso não tenha cadastro!</p>
           <button className="btn btn-primary" onClick={criarJS}>
             Crie uma conta
           </button>
+          <img src={logoBST} alt="logoBST" className='logo-img-mobile2'></img>
           <img src={logo} alt="logo" className='logo-img' onClick={criarJS}></img>
         </div>
         <div className="second-column">
@@ -280,7 +283,7 @@ function Login() {
                 validationSchema={validationLogin}
               >
                 {formikProps => (
-                  <Form className="form">
+                  <Form id="login" className="form">
                     <label className="Label-input">
                       <FontAwesomeIcon className="icon-modify" icon={faEnvelope} />
                       <Field name="email" placeholder="Email" />

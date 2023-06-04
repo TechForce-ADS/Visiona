@@ -23,7 +23,7 @@ const Home: React.FC = () => {
            <Navbar />
             <div className="banner">
                 <h2>A integradora <b>Brasileira</b> de sistemas espaciais</h2>
-                <h3>Resultante de uma iniciativa única do Governo brasileiro de estimular a criação de uma empresa integradora na
+                <h3>Resultante de uma iniciativa única do Governo Brasileiro de estimular a criação de uma empresa integradora na
                     indústria espacial, a Visiona é uma joint-venture entre a Embraer Defesa & Segurança e a Telebras.</h3>
 
 
