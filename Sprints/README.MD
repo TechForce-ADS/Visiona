@@ -16,5 +16,14 @@
  </p>
  
  # 3° Sprint
+ > Na terceira sprint focamos na criação da Dashboard, páginação de páginas e entrada adm/usuário
+ > Abaixo temos a entrada como usuário
+ <p align="">
+ <img src="https://github.com/TechForce-ADS/imagens/blob/main/video3s1.gif">
+ </p>
+ >Entrada como administrador
+ <p align="">
+ <img src="https://github.com/TechForce-ADS/imagens/blob/main/video3s2.gif">
+ </p>
  
  # 4° Sprint
