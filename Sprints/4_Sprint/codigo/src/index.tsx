@@ -8,6 +8,7 @@ import Contato from './components/contact/contato';
 import HomeC from './components/home/homeComum';
 import Login from './components/login/Login';
 import Perfil from './components/profile/profile';
+import Confirmar from './components/confirmar/confirmar';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -30,6 +31,7 @@ ReactDOM.render(
            <Route path='/Logout' element={<Logout />}/>
            <Route path='/Contato' element={<Contato />}/>
            <Route path='/Dashboard' element={<Dashboard />}/>
+           <Route path='/Confirmar' element={<Confirmar />}/>
            <Route path='/' element={<Login />}/>
            <Route path='/Recuperar' element={<Recuperar/>}/>
         </Routes>

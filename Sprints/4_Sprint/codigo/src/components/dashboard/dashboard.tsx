@@ -53,7 +53,6 @@ const Dashboard: React.FC = () => {
     <div>
       <Navbar />
 
-      
       <div className='containerDash'>
       <h1 id='tituto'>Dashboard</h1>
       <h1 id='total'>Total de usuários: {totalUsers}</h1>

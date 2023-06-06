@@ -30,7 +30,8 @@
     text-align: center;
     background-image: url('../../imagens/espal.jpg');
     background-size: cover;
-
+    align-items: center;
+    justify-content: center;
   }
 
   .banner h2 {

@@ -1,3 +1,5 @@
+
+
 .containerLogin {
   height: 100vh;
   display: flex;
@@ -166,14 +168,17 @@
  
 
 
-.form#cadastro {
-  width: 50%;
+ .form#cadastro {
+  justify-content: center;
+  width: 65%;
+  align-items: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
+  align-items: center;
 }
 
 

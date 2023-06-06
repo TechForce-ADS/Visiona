@@ -14,7 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     status: DataTypes.STRING,
     cpf: DataTypes.STRING,
     adm: DataTypes.STRING,
-    token: DataTypes.STRING
+    token: DataTypes.STRING,
+    emailConfirmed: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'User',

@@ -114,8 +114,8 @@ function Profile() {
                 <b>Cargo:</b> {getAdm(user.adm)}
               </p>
               <div className="alteraInfo">
-                <button onClick={() => handleEditUser(user)}>Alterar Informações</button>
-                <button onClick={() => handleForgotPassword(user.email)}>
+                <button id="btnProfi" onClick={() => handleEditUser(user)}>Alterar Informações</button>
+                <button id="btnProfi" onClick={() => handleForgotPassword(user.email)}>
                       Alterar Senha
                     </button>
               </div>
@@ -132,20 +132,20 @@ function Profile() {
             </span>
             <h2>Editar Informações</h2>
             <div>
-              <label>Nome:</label>
-              <input type="text" name="nome" value={editedUser.nome} onChange={handleChange} />
+              <label id="labelProfi" >Nome:</label>
+              <input id="inputProfi" type="text" name="nome" value={editedUser.nome} onChange={handleChange} />
             </div>
             <div>
-              <label>Email:</label>
-              <input type="text" name="email" value={editedUser.email} onChange={handleChange} />
+              <label id="labelProfi" >Email:</label>
+              <input id="inputProfi"  type="text" name="email" value={editedUser.email} onChange={handleChange} />
             </div>
             <div>
-              <label>CPF:</label>
-              <input type="text" name="cpf" value={editedUser.cpf} onChange={handleChange} />
+              <label id="labelProfi" >CPF:</label>
+              <input  id="inputProfi"  type="text" name="cpf" value={editedUser.cpf} onChange={handleChange} />
             </div>
             <div className="botoesProfile">
-              <button onClick={handleSaveUser}>Salvar</button>
-              <button onClick={() => setShowEditModal(false)}>Cancelar</button>
+              <button id="btnProfi" onClick={handleSaveUser}>Salvar</button>
+              <button id="btnProfi" onClick={() => setShowEditModal(false)}>Cancelar</button>
             </div>
           </div>
         </div>

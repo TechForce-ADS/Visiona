@@ -1,0 +1,25 @@
+.confirmContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnConfirm {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btnConfirm{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 5%  ;
+  }

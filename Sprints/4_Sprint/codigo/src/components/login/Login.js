@@ -45,35 +45,31 @@ function Login() {
         confirmarSenha: values.confirmPassword,
         cpf: values.cpf,
       })
-      .then((response) => {
-        console.log(response);
-        if (response.status === 200) {
-          Swal.fire({
-            icon: 'success',
-            title: 'Usuário registrado com sucesso',
-            showConfirmButton: false,
-            timer: 1500,
-          });
-        } 
+      .then(() => {
+        Swal.fire({
+          icon: 'success',
+          title: 'Email de verificação enviado ao seu Email!',
+          showConfirmButton: false,
+          timer: 1500,
+        });
       })
       .catch((error) => {
         console.log(error);
         Swal.fire({
           icon: 'error',
           iconColor: '#fc5d00',
-          text: 'Esse usuário já existe',
+          text: 'Erro ao enviar o email de confirmação',
           confirmButtonColor: '#fc5d00',
-
         });
       });
-
-
     }
 
     const validationLogin = Yup.object().shape({
       email: Yup.string().email('Email inválido').required('Email é obrigatório'),
       password: Yup.string().required('Senha é obrigatória'),
     });
+
+
 
   function handleClickLogin(values) {
     axios
@@ -82,17 +78,31 @@ function Login() {
         senha: values.password,
         status: values.status,
         adm: values.adm,
+        emailConfirmed: values.emailConfirmed,
       })
+
       .then((response) => {
         const user = response.data.user;
 
+        
         if (!user) {
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Usuário não encontrado',
           });
-        } else if (user.status === false) {
+        }
+        else if (user.emailConfirmed === false) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Conta Não autentificada!',
+            text: 'Verifique na sua caixa de email!',
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+
+         else if (user.status === false) {
           Swal.fire({
             icon: 'success',
             title: 'Conta desativada!',

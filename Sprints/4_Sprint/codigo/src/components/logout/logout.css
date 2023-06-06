@@ -1,9 +1,4 @@
-* {
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
 
-}
 
 .logoutContainer {
   width: 100%;
@@ -37,6 +32,8 @@
   border-radius: 20px;
   text-align: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -55,6 +52,7 @@
   border-radius: 20px;
   text-align: center;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .logoutSessao button {
@@ -66,6 +64,8 @@
   border-radius: 20px;
   text-align: center;
   color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 .logoutSessao button:hover {

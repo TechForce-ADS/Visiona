@@ -15,7 +15,8 @@ routes.get('/users/:id', UserController.show);
 routes.put('/users/:id', UserController.update);
 routes.delete("/users/:id", UserController.destroy);
 routes.post('/api/reset-password', UserController.resetPassword);
-routes.post('/users/recover', UserController.recover); 
- 
+routes.post('/users/recover', UserController.recover);
+routes.get('/api/confirmartoken=:token', UserController.confirmToken);
+
 
 module.exports = routes;

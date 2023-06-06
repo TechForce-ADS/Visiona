@@ -50,16 +50,51 @@ class UserController {
       }
   
       if (senha !== confirmarSenha) {
-        return res.status(400).json({ message: "As senhas não coincidem" }); 
+        return res.status(400).json({ message: "As senhas não coincidem" });
       }
   
-      const salt = await bcrypt.genSalt(10); // Gerar um salt aleatório com 10 rounds
-      const hashedSenha = await bcrypt.hash(senha, salt); // Hash da senha usando o salt gerado
+      const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: 'brenertestando@gmail.com',
+          pass: 'brfmfbdzeiktjdhh',
+        },
+      });
   
-      const createdUser = await User.create({ nome, email, cpf, senha: hashedSenha }); // Criação do usuário com a senha já criptografada
+      const confirmUrl = 'http://localhost:3000/confirmar';
   
-      return res.status(200).json({ message: "Usuário registrado com sucesso" });
+      const token = jwt.sign(
+        { email },
+        'd#7Hj&f$23sPc89!TqA',
+        { expiresIn: '1h' }
+      );
   
+      const mailOptions = {
+        from: 'brenertestando@gmail.com',
+        to: email,
+        subject: 'Confirmação de e-mail',
+        html: `Para confirmar seu e-mail, acesse o seguinte link: <a href="${confirmUrl}?token=${token}">${confirmUrl}?token=${token}</a>`,
+      };
+  
+      transporter.sendMail(mailOptions, async (error, info) => {
+        if (error) {
+          console.error('Erro ao enviar o e-mail:', error);
+          return res.status(500).json({ error: 'Erro interno do servidor' });
+        }
+  
+        try {
+          const salt = await bcrypt.genSalt(10);
+          const hashedSenha = await bcrypt.hash(senha, salt);
+  
+          const createdUser = await User.create({ nome, email, cpf, senha: hashedSenha, token, emailConfirmed: false });
+  
+          console.log('E-mail enviado com sucesso:', info.response);
+          return res.json({ message: 'Token enviado para o e-mail' });
+        } catch (error) {
+          console.log(error);
+          return res.status(400).json({ message: "Falha ao cadastrar usuário" });
+        }
+      });
     } catch (error) {
       console.log(error);
       return res.status(400).json({ message: "Falha ao cadastrar usuário" });
@@ -184,6 +219,29 @@ class UserController {
     }
   }
 
+  
+  async confirmToken(req, res) {
+    try {
+      const { token } = req.params;
+  
+      // Verificar o token e atualizar a coluna emailConfirmed para true
+      const user = await User.findOne({ where: { token } });
+  
+      if (!user) {
+        return res.status(404).json({ message: 'Token inválido' });
+      }
+  
+      await user.update({ emailConfirmed: true, token: null });
+  
+      return res.status(200).json({ message: 'Email confirmado com sucesso' });
+    } catch (error) {
+      console.error('Erro ao confirmar o email', error);
+      return res.status(500).json({ error: 'Erro interno do servidor' });
+    }
+  }
+
+
+  
   async resetPassword(req, res) {
     const { token, newPassword } = req.body;
 

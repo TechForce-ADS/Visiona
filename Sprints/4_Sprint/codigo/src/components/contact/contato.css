@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 5%;
-
+  align-items: center;
+  justify-content: center;
 }
 
 .contato-text {
@@ -21,7 +22,7 @@
 
 .contato-text h2 {
   font-size: 28px;
-  margin-top: 1%;
+  margin-top: 30%;
   
   
 }
@@ -51,6 +52,8 @@
   width: 100%;
   height: 60vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ContContent h1 {
@@ -90,7 +93,8 @@
 
 /*==== Imagem do mapa ====*/
 #local {
-  width: 60%;
+  width: 100%;
+  height: 67%;
   border: 1px solid black;
 
 }
