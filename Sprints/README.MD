@@ -21,7 +21,8 @@
  <p align="">
  <img src="https://github.com/TechForce-ADS/imagens/blob/main/video3s1.gif">
  </p>
- >Entrada como administrador
+ 
+ > Entrada como administrador
  <p align="">
  <img src="https://github.com/TechForce-ADS/imagens/blob/main/video3s2.gif">
  </p>
