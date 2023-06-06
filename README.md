@@ -188,11 +188,11 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
  
 
   ### Sprint 4</a> - 15/05 - 04/06</p>
- > <p>:x: Meu perfil</p>
- > <p>:x: Sistema de autenticação</p>
- > <p>:x: Manual do usuário completo</p>
- > <p>:x: Adicionar a funcionalidade "esqueci minha senha"</p>
- > <p>:x: Finalizar documentação </p>
+ > <p>:heavy_check_mark: Meu perfil</p>
+ > <p> Sistema de autenticação</p>
+ > <p>:heavy_check_mark: Manual do usuário completo</p>
+ > <p>:heavy_check_mark: Adicionar a funcionalidade "esqueci minha senha"</p>
+ > <p>:heavy_check_mark: Finalizar documentação </p>
 
  
  
