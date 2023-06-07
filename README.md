@@ -21,7 +21,7 @@ Projeto de API - 3° Semestre de 2023 da Fatec São José dos Campos - VISIONA
 </table>
 </br>
 
-# Artigos
+# Tópicos
 
 - <a href ="#equipes"> Equipes </a>
 - <a href ="#projeto"> Projeto </a>
