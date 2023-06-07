@@ -223,8 +223,8 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 # Manual do Usuário
 Acesse o manual do usuário feito:
-
-https://github.com/TechForce-ADS/Visiona/blob/main/Manual%20Visiona.pdf
+- >  <a href="https://github.com/TechForce-ADS/Visiona/blob/main/Manual%20Visiona.pdf"> Manual do usuário
+ 
 
 # Como rodar o projeto?
 > A tecnologia necessária para rodar o projeto é o Banco de dados Postgres, disponível em:
