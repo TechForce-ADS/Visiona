@@ -192,6 +192,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
  > <p> :heavy_check_mark: Sistema de autenticação</p>
  > <p>:heavy_check_mark: Manual do usuário completo</p>
  > <p>:heavy_check_mark: Adicionar a funcionalidade "esqueci minha senha"</p>
+ > <p>:heavy_check_mark: Responsividade </p>
  > <p>:heavy_check_mark: Finalizar documentação </p>
 
  
