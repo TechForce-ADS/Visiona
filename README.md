@@ -32,6 +32,7 @@ Projeto de API - 3° Semestre de 2023 da Fatec São José dos Campos - VISIONA
 - <a href ="#tecnologia-utilizadas"> Tecnologias Utilizadas </a>
 - <a href ="#manual-do-usuário"> Manual do usuário </a>
 - <a href ="#como-rodar-o-projeto"> Como rodar o projeto? </a>
+- <a href ="#modelo-de-dados"> Modelo de dados</a>
 - <a href ="#sprint"> Sprints </a>
 - <a href ="#burndown-do-projeto"> Burndown do Projeto </a>
 
