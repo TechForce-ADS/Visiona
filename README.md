@@ -106,8 +106,7 @@ ST - Scrum Team
 ```
 
 # Projeto
-Um sistema de gerenciamento de usuários de autenticação e autorização para acesso de serviços oferecidos pela empresa. A dashboard deve ser implementada utilizando GCP (Google Cloud Platform), containers devem ser utilizados e implementado em esteira CI/CD. O sistema deve seguir boas práticas de desenvolvimento orientado a objetos, testes unitários e de integração para garantir uma entrega de qualidade, onde 80% do código deve estar validado por uma ferramenta de análise. 
-Deve possuir uma interface para gerenciar os usuários, permitindo que sejam criados, editados, excluidos e visualizados, havendo necessidade de atribuir permissões para cada usuário. 
+Um sistema de gerenciamento de usuários de autenticação e autorização para acesso de serviços oferecidos pela empresa. Deve possuir uma interface para gerenciar os usuários, permitindo que sejam criados, editados, excluidos e visualizados, havendo necessidade de atribuir permissões para cada usuárioe Dashboard.
 
  
 
