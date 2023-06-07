@@ -189,7 +189,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
   ### Sprint 4</a> - 15/05 - 04/06</p>
  > <p>:heavy_check_mark: Meu perfil</p>
- > <p> Sistema de autenticação</p>
+ > <p> :heavy_check_mark: Sistema de autenticação</p>
  > <p>:heavy_check_mark: Manual do usuário completo</p>
  > <p>:heavy_check_mark: Adicionar a funcionalidade "esqueci minha senha"</p>
  > <p>:heavy_check_mark: Finalizar documentação </p>
@@ -218,7 +218,9 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 # Backlog do Produto 
 <img src = "https://github.com/TechForce-ADS/imagens/blob/main/BACKLOG%20DO%20PRODUTO.png" />
 
-
+# Manual do Usuário
+Acesse o Manual do usuário feito:
+https://github.com/TechForce-ADS/Visiona/blob/main/Manual%20Visiona.pdf
 
 # Sprint
 
@@ -240,3 +242,6 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
   
 > 3° Sprint
 <img src= "https://github.com/TechForce-ADS/imagens/blob/main/Imagem3.png" />
+
+ > 4° Sprint
+<img src= "https://github.com/TechForce-ADS/imagens/blob/main/grafico4.png" />
