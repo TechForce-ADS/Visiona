@@ -52,7 +52,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "nodemon src/server.js",
-    "vercel-build": "npx sequelize db:migrate deploy"
+    "vercel-build": "npx sequelize db:migrate"
   },
   "eslintConfig": {
     "extends": [
