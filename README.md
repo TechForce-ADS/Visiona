@@ -23,7 +23,6 @@ Projeto de API - 3° Semestre de 2023 da Fatec São José dos Campos - VISIONA
 
 # Artigos
 
-- <a href ="#conhecimento-exigido"> Conhecimento Exigido </a>
 - <a href ="#equipes"> Equipes </a>
 - <a href ="#projeto"> Projeto </a>
 - <a href ="#objetivo"> Objetivo </a>
@@ -36,16 +35,7 @@ Projeto de API - 3° Semestre de 2023 da Fatec São José dos Campos - VISIONA
 - <a href ="#sprint"> Sprints </a>
 - <a href ="#burndown-do-projeto"> Burndown do Projeto </a>
 
-# Conhecimento exigido 
 
-> 
-- Dashboard Web de alta complexidade
-- Levantar e registrar Requisitos usando Métodos Ágeis e Tradicionais 
-- Documentação DoR e Dod
-- Modelar Processos de Negocios usando VPC e BPMN
-- Projetar arquitetura lógica de software
-- Implementar aplicação usando ORM
-- Utilizar IDE's na implementação de Aplicação em TypeScript
 
 # Equipes
 <table>
