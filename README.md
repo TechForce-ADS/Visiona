@@ -232,8 +232,9 @@ Passo a passo:
 -  Após o banco de dados criado, abrir um novo terminal ```cmd``` e digitar:
 -  ```npm start``` (inicia o programa)
 
-
-
+# Modelo de dados
+  
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/587f3cf0-b286-4239-a6fb-15e8b21720fb.jpg"/> 
 
 
 # Sprint
