@@ -31,6 +31,8 @@ Projeto de API - 3° Semestre de 2023 da Fatec São José dos Campos - VISIONA
 - <a href ="#metodologia"> Metodologia </a>
 - <a href ="#cronograma-e-sprint"> Cronograma e Sprints </a>
 - <a href ="#tecnologia-utilizadas"> Tecnologias Utilizadas </a>
+- <a href ="#manual-do-usuario"> Manual do Usuário </a>
+- <a href ="#como-rodar-o-programa"> Como rodar o programa? </a>
 - <a href ="#sprint"> Sprints </a>
 - <a href ="#burndown-do-projeto"> Burndown do Projeto </a>
 
@@ -222,6 +224,9 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 # Manual do Usuário
 Acesse o Manual do usuário feito:
 https://github.com/TechForce-ADS/Visiona/blob/main/Manual%20Visiona.pdf
+
+# Como rodar o programa
+Passo a passo de como executar a aplicação
 
 # Sprint
 
