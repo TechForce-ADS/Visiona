@@ -152,11 +152,11 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 # Cronograma e Sprint
 
-<img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronog-spr4.png" />
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/BACKLOG%20DO%20PRODUTO%20(3).png" />
 
 > Sprint:
 
- <img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronograma-sprint.png" >
+ <img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronog-spr4.png" >
  
  ### Sprint 1</a> - 13/03 - 02/04</p>
  > <p>:heavy_check_mark: Design e identidade visual </p>
