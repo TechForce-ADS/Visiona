@@ -31,8 +31,6 @@ Projeto de API - 3° Semestre de 2023 da Fatec São José dos Campos - VISIONA
 - <a href ="#metodologia"> Metodologia </a>
 - <a href ="#cronograma-e-sprint"> Cronograma e Sprints </a>
 - <a href ="#tecnologia-utilizadas"> Tecnologias Utilizadas </a>
-- <a href ="#manual-do-usuario"> Manual do Usuário </a>
-- <a href ="#como-rodar-o-programa"> Como rodar o programa? </a>
 - <a href ="#sprint"> Sprints </a>
 - <a href ="#burndown-do-projeto"> Burndown do Projeto </a>
 
@@ -222,11 +220,29 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 <img src = "https://github.com/TechForce-ADS/imagens/blob/main/back-prod-4.png" />
 
 # Manual do Usuário
-Acesse o Manual do usuário feito:
-https://github.com/TechForce-ADS/Visiona/blob/main/Manual%20Visiona.pdf
+Acesse o manual do usuário feito:
+<a href ="https://github.com/TechForce-ADS/Visiona/blob/main/Manual%20Visiona.pdf"/>
 
-# Como rodar o programa
-Passo a passo de como executar a aplicação
+# Como rodar o projeto?
+> A tecnologia necessária para rodar o projeto é o Banco de dados Postgres, disponível em:
+> https://www.postgresql.org/download/
+
+Passo a passo:
+- Clone o projeto em ```<> CLONE```, na parte superior direita do github, em cor verde
+- Clicar em ````Windows```` + ````R````, e digite ```CMD```, o prompt de comando do computador.
+- Depois digitar ``` git clone ``` no cmd e colar o código que clonou ```https://github.com/TechForce-ADS/Visiona.git```
+- Acesse TechForce-ADS/Visiona/tree/main/Sprints/4_Sprint/codigo e na pasta código:
+- Digitar em sequência
+-  ```npm install``` (baixa os módulos)
+-  ```npx sequelize db:create``` (cria o banco de dados)
+-  ```npx sequelize db:migrate```(migra as tabelas para o banco de dados)
+-  ```npm run dev``` (roda o servidor node, para o back-end funcionar)
+-  Após o banco de dados criado, abrir um novo terminal ```cmd``` e digitar:
+-  ```npm start``` (inicia o programa)
+
+
+
+
 
 # Sprint
 
