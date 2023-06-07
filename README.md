@@ -152,7 +152,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 
 # Cronograma e Sprint
 
-<img src = "https://github.com/TechForce-ADS/imagens/blob/main/BACKLOG%20DO%20PRODUTO%20(3).png" />
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/cronog-spr4.png" />
 
 > Sprint:
 
@@ -216,7 +216,7 @@ Apresentar todos os requisitos estabelecidos pelo cliente, atingindo um nível s
 > - JavaScript (Back-end)
 
 # Backlog do Produto 
-<img src = "https://github.com/TechForce-ADS/imagens/blob/main/BACKLOG%20DO%20PRODUTO.png" />
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/back-prod-4.png" />
 
 # Manual do Usuário
 Acesse o Manual do usuário feito:
