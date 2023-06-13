@@ -235,7 +235,7 @@ Passo a passo:
 
 # Modelo de dados
   
-<img src = "https://github.com/TechForce-ADS/imagens/blob/main/587f3cf0-b286-4239-a6fb-15e8b21720fb.jpg"/> 
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/Modelo.png"/> 
 
 
 # Sprint
