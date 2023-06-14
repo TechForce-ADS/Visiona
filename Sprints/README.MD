@@ -28,7 +28,8 @@
  </p>
  
  # 4° Sprint
-> Finalizando a Api do 3° Semestre, implementamos função esqueci minha senha e a autenticação de usuários.
+> Finalizando a Api do 3° Semestre, implementamos a função "esqueci minha senha", autenticação de usuários e a área de Meu Perfil, onde o usuário comum pode alterar seus dados.
+
 > Abaixo temos a entrada como usuário comum:
 
 <p align = "">
