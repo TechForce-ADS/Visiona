@@ -28,3 +28,15 @@
  </p>
  
  # 4° Sprint
+> Finalizando a Api do 3° Semestre, implementamos função esqueci minha senha e a autenticação de usuários.
+> Abaixo temos a entrada como usuário comum:
+
+<p align = "">
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/videost4-video1.gif">
+
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/videost4-video2.gif">
+
+> Entrada como administrador:
+<img src = "https://github.com/TechForce-ADS/imagens/blob/main/videost4-video3.gif">
+ 
+ </p>
